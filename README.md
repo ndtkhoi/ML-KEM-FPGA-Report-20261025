@@ -1,6 +1,6 @@
 # ML-KEM-768 và ML-KEM-1024 trên FPGA
 
-Mã nguồn RTL, kiểm thử và kết quả phục vụ báo cáo ngày 25/10/2026 của hệ ML-KEM trên DE10-Standard, FPGA Cyclone V `5CSXFC6D6F31C6`. Bộ nguồn gồm bảy kiến trúc so sánh và một project demo nút nhấn KEY1. Clock lõi mục tiêu là 160 MHz; UART dùng 115200 baud, 8-N-1.
+Mã nguồn RTL, kiểm thử và kết quả phục vụ báo cáo của hệ ML-KEM trên DE10-Standard, FPGA Cyclone V `5CSXFC6D6F31C6`. Bộ nguồn gồm bảy kiến trúc so sánh và một project demo nút nhấn KEY1. Clock lõi mục tiêu là 160 MHz; UART dùng 115200 baud, 8-N-1.
 
 [Kết quả và minh chứng](docs/EVIDENCE.md) · [Excel tổng hợp](docs/ML_KEM_Theo_doi_kien_truc.xlsx) · [Hướng dẫn tái lập](docs/REPRODUCE.md)
 
