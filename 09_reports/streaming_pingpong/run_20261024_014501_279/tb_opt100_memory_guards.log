@@ -1,0 +1,21 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_opt100_memory_guards.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_opt100_memory_guards.transcript.log tb_opt100_memory_guards -do "run -all; quit -f" 
+# Start time: 01:50:24 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_opt100_memory_guards
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.ghash_mul
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mlkem_sampler
+# run -all
+# GCM_RAM_GUARDS: PASS max_payload tag_first_last constant_cycles=4621 wipe256 busy_load latched_inputs
+# GCM_RAM_GUARDS: PASS short_after_long reset zeroize_during_payload invalid_lengths
+# SAMPLER_RAM_GUARDS: PASS reject_all q_boundary both_terminal_candidates CBD_signed last_byte busy_load
+# OPT100_MEMORY_GUARDS: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_opt100_memory_guards.sv(173)
+#    Time: 252870 ns  Iteration: 1  Instance: /tb_opt100_memory_guards
+# End time: 01:50:25 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

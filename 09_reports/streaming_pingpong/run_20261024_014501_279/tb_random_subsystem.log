@@ -1,0 +1,23 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_random_subsystem.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_random_subsystem.transcript.log tb_random_subsystem -do "run -all; quit -f" 
+# Start time: 01:46:23 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_random_subsystem
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.shake256_drbg
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.fpga_ro_entropy
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.entropy_health
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mlkem_random_manager
+# run -all
+# DRBG_ALARM_CLEAR: PASS abort_mid_round clear_within_two_clocks no_stale_done restart
+# DRBG_PULSE_CLEAR: PASS mid_round zeroize_one_clock
+# TRNG_HEALTH_SHAKE256_DRBG: PASS samples=2962 apt_ones=258 first_crc=24c4ae8c second_crc=1d7e3069
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_random_subsystem.sv(271)
+#    Time: 59340 ns  Iteration: 1  Instance: /tb_random_subsystem
+# End time: 01:46:23 on Oct 24,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

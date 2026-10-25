@@ -1,0 +1,37 @@
+# Generated simulation/build work; selected evidence under 09_reports is kept.
+/04_sim/
+/backups/
+/tmp/
+/outputs/
+/output/
+/.venv/
+/venv/
+**/__pycache__/
+*.py[cod]
+**/.pytest_cache/
+
+# Quartus generated databases and newly built outputs.
+/05_quartus/**/db/
+/05_quartus/**/incremental_db/
+/05_quartus/**/output_files/
+/05_quartus/**/*.qws
+/05_quartus/**/*.qdf
+/05_quartus/**/c5_pin_model_dump.txt
+
+# Generated bitstreams, waveform data and third-party executables.
+*.sof
+*.pof
+*.jic
+*.rbf
+*.wlf
+*.vcd
+*.fsdb
+*.exe
+*.dll
+
+# Editor and operating-system temporary files.
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+.vscode/

@@ -1,0 +1,42 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 18:39:51 on Oct 25,2026
+vlog -sv -work D:\ML_KEM_768_1024\outputs\github_publish_20261025\source_validation\iterative_baseline\work "+define+ITERATIVE_BASELINE_TIMING_FIX" D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\arithmetic\mod_add.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\arithmetic\mod_sub.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\arithmetic\mod_mul_pipe.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\mem\poly_ram_dp.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\ntt\zetas_rom.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\ntt\gammas_rom.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\ntt\ntt_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\ntt\multiply_ntts_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\hash\keccak_round_constants.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\hash\keccak_round.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\hash\keccak_f1600_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\hash\keccak_sponge.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\random\fpga_ro_entropy.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\random\entropy_health.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\random\shake256_drbg.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\random\mlkem_random_manager.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\codec\compress_decompress.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\codec\compress_seq.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\codec\byte_codec_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\sample\mlkem_sampler.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\uart\uart_tx.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\uart\uart_rx.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\display\seg7_decode.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\top\clock_100.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\core\mlkem_service_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\uart\channel_kem_uart.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\aead\aes256_block.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\aead\ghash_mul.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\aead\aes_gcm_core.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\aead\channel_kdf.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\aead\channel_session.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\uart\channel_record_uart.sv D:\ML_KEM_768_1024\outputs\github_publish_20261025\package\01_rtl\architectures\iterative_baseline\rtl\top\mlkem_channel_top.sv 
+-- Compiling module mod_add
+-- Compiling module mod_sub
+-- Compiling module mod_mul_pipe
+-- Compiling module poly_ram_dp
+-- Compiling module zetas_rom
+-- Compiling module gammas_rom
+-- Compiling module ntt_core
+-- Compiling module multiply_ntts_core
+-- Compiling module keccak_round_constants
+-- Compiling module keccak_round
+-- Compiling module keccak_f1600_core
+-- Compiling module keccak_sponge
+-- Compiling module fpga_ro_entropy
+-- Compiling module entropy_health
+-- Compiling module shake256_drbg
+-- Compiling module mlkem_random_manager
+-- Compiling module compress_decompress
+-- Compiling module compress_seq
+-- Compiling module byte_codec_core
+-- Compiling module mlkem_sampler
+-- Compiling module uart_tx
+-- Compiling module uart_rx
+-- Compiling module seg7_decode
+-- Compiling module clock_100
+-- Compiling module mlkem_service_core
+-- Compiling module channel_kem_uart
+-- Compiling module aes256_block
+-- Compiling module ghash_mul
+-- Compiling module aes_gcm_core
+-- Compiling module channel_kdf
+-- Compiling module channel_session
+-- Compiling module channel_record_uart
+-- Compiling module mlkem_channel_top
+
+Top level modules:
+	compress_decompress
+	mlkem_channel_top
+End time: 18:39:52 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

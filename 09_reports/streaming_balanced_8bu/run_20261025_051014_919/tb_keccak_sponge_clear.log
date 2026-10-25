@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\tb_keccak_sponge_clear.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_8bu\run_20261025_051014_919\tb_keccak_sponge_clear.transcript.log tb_keccak_sponge_clear -do "run -all; quit -f" 
+# Start time: 05:11:45 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.tb_keccak_sponge_clear
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.keccak_round
+# run -all
+# SPONGE_CLEAR_MODE: PASS mode=0 cycles=292
+# SPONGE_CLEAR_MODE: PASS mode=1 cycles=252
+# SPONGE_CLEAR_MODE: PASS mode=2 cycles=1196
+# SPONGE_CLEAR_MODE: PASS mode=3 cycles=3900
+# KECCAK_SPONGE_CLEAR: ALL TESTS PASS aborts=72 four_modes all15states both_phases multiblock start_load_priority no_stale_result restart_oracle
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_8bu/tb_keccak_sponge_clear.sv(149)
+#    Time: 1064393550 ps  Iteration: 1  Instance: /tb_keccak_sponge_clear
+# End time: 05:11:59 on Oct 25,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0

@@ -1,0 +1,32 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\tb_channel_kem_reset_timeout.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked\run_20261025_085959_024\tb_channel_kem_reset_timeout.transcript.log tb_channel_kem_reset_timeout -do "run -all; quit -f" 
+# Start time: 09:07:16 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.tb_channel_kem_reset_timeout
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.channel_kem_uart
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mlkem_sampler
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.poly_bank_128_sdp
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.gammas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.compress_seq
+# run -all
+# CHANNEL_KEM_RESET_TIMEOUT: PASS exact_RX_RNG_deadlines one_clock_reset launch_mask restart alarm adjacent_payload
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_channel_kem_reset_timeout.sv(115)
+#    Time: 405396 ns  Iteration: 0  Instance: /tb_channel_kem_reset_timeout
+# End time: 09:07:20 on Oct 25,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

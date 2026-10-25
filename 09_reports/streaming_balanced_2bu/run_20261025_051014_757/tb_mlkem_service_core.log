@@ -1,0 +1,83 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\tb_mlkem_service_core.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_2bu\run_20261025_051014_757\tb_mlkem_service_core.transcript.log tb_mlkem_service_core -do "run -all; quit -f" 
+# Start time: 05:11:56 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.tb_mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_sampler
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.ntt_core_stream2
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.gammas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.compress_seq
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.poly_bank_64_sdp
+# run -all
+# SERVICE_OP mode=768 op=2 error=11 cycles=2
+# SERVICE_OP mode=768 op=3 error=12 cycles=2
+# SERVICE_OP mode=768 op=2 error=00 cycles=95932
+# SERVICE_PROFILE mode=768 op=2 ntt_busy=3213 mul_busy=1716 sponge_busy=19568 poly_transfer=9766
+# SERVICE_PROFILE_DETAIL mode=768 op=2 hash_io=12294 sample_io=4128 poly=14080 transform=13312 codec=11040 message=0 other=41078
+# SERVICE_OP mode=768 op=1 error=00 cycles=72229
+# SERVICE_PROFILE mode=768 op=1 ntt_busy=2754 mul_busy=1287 sponge_busy=18888 poly_transfer=7710
+# SERVICE_PROFILE_DETAIL mode=768 op=1 hash_io=11934 sample_io=3870 poly=9984 transform=0 codec=9246 message=0 other=37195
+# SERVICE_OP mode=768 op=3 error=12 cycles=2
+# SERVICE_OP mode=768 op=3 error=13 cycles=2
+# SERVICE_OP mode=768 op=3 error=00 cycles=132974
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=5049 mul_busy=2145 sponge_busy=21908 poly_transfer=13364
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=14570 sample_io=4128 poly=17408 transform=13312 codec=28412 message=3328 other=51816
+# SERVICE_OP mode=768 op=2 error=00 cycles=95932
+# SERVICE_PROFILE mode=768 op=2 ntt_busy=3213 mul_busy=1716 sponge_busy=19568 poly_transfer=9766
+# SERVICE_PROFILE_DETAIL mode=768 op=2 hash_io=12294 sample_io=4128 poly=14080 transform=13312 codec=11040 message=0 other=41078
+# SERVICE_OP mode=768 op=3 error=00 cycles=132974
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=5049 mul_busy=2145 sponge_busy=21908 poly_transfer=13364
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=14570 sample_io=4128 poly=17408 transform=13312 codec=28412 message=3328 other=51816
+# SERVICE_OP mode=768 op=3 error=00 cycles=132974
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=5049 mul_busy=2145 sponge_busy=21908 poly_transfer=13364
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=14570 sample_io=4128 poly=17408 transform=13312 codec=28412 message=3328 other=51816
+# SERVICE_OP mode=768 op=2 error=22 cycles=5
+# SERVICE_OP mode=768 op=2 error=10 cycles=2
+# MLKEM_SERVICE_768: PASS independent_ops external_EK_CT reject_same_latency private_slot zeroize
+# SERVICE_OP mode=1024 op=2 error=11 cycles=2
+# SERVICE_OP mode=1024 op=3 error=12 cycles=2
+# SERVICE_OP mode=1024 op=2 error=00 cycles=143541
+# SERVICE_PROFILE mode=1024 op=2 ntt_busy=4131 mul_busy=2860 sponge_busy=31976 poly_transfer=14906
+# SERVICE_PROFILE_DETAIL mode=1024 op=2 hash_io=19842 sample_io=6450 poly=21248 transform=16640 codec=14697 message=0 other=64664
+# SERVICE_OP mode=1024 op=1 error=00 cycles=114409
+# SERVICE_PROFILE mode=1024 op=1 ntt_busy=3672 mul_busy=2288 sponge_busy=31296 poly_transfer=12336
+# SERVICE_PROFILE_DETAIL mode=1024 op=1 hash_io=19482 sample_io=6192 poly=16384 transform=0 codec=12328 message=0 other=60023
+# SERVICE_OP mode=1024 op=3 error=12 cycles=2
+# SERVICE_OP mode=1024 op=3 error=13 cycles=2
+# SERVICE_OP mode=1024 op=3 error=00 cycles=190867
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=6426 mul_busy=3432 sponge_busy=35084 poly_transfer=19532
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=23078 sample_io=6450 poly=25344 transform=16640 codec=37453 message=3328 other=78574
+# SERVICE_OP mode=1024 op=2 error=00 cycles=143541
+# SERVICE_PROFILE mode=1024 op=2 ntt_busy=4131 mul_busy=2860 sponge_busy=31976 poly_transfer=14906
+# SERVICE_PROFILE_DETAIL mode=1024 op=2 hash_io=19842 sample_io=6450 poly=21248 transform=16640 codec=14697 message=0 other=64664
+# SERVICE_OP mode=1024 op=3 error=00 cycles=190867
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=6426 mul_busy=3432 sponge_busy=35084 poly_transfer=19532
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=23078 sample_io=6450 poly=25344 transform=16640 codec=37453 message=3328 other=78574
+# SERVICE_OP mode=1024 op=3 error=00 cycles=190867
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=6426 mul_busy=3432 sponge_busy=35084 poly_transfer=19532
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=23078 sample_io=6450 poly=25344 transform=16640 codec=37453 message=3328 other=78574
+# SERVICE_OP mode=1024 op=2 error=22 cycles=5
+# SERVICE_OP mode=1024 op=2 error=10 cycles=2
+# MLKEM_SERVICE_1024: PASS independent_ops external_EK_CT reject_same_latency private_slot zeroize
+# MU_STREAM: PASS enc_writes=1024 dec_writes=1536 all_256_positions both_modes secret_clear
+# POLY_PIPELINE: PASS add_writes=68608 sub_writes=1536 operand_and_result_registers
+# MLKEM_SERVICE_CORE: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_2bu/tb_mlkem_service_core.sv(284)
+#    Time: 16765620 ns  Iteration: 1  Instance: /tb_mlkem_service_core
+# End time: 05:16:12 on Oct 25,2026, Elapsed time: 0:04:16
+# Errors: 0, Warnings: 0

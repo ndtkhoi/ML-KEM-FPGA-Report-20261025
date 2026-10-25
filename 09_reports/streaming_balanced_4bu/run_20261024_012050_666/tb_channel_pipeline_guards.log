@@ -1,0 +1,23 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\tb_channel_pipeline_guards.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_4bu\run_20261024_012050_666\tb_channel_pipeline_guards.transcript.log tb_channel_pipeline_guards -do "run -all; quit -f" 
+# Start time: 01:25:56 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.tb_channel_pipeline_guards
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.channel_session
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.channel_kdf
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\work.ghash_mul
+# run -all
+# CHANNEL_PIPELINE_GUARDS: ALL TESTS PASS clear_during_Keccak_AES after_result clear_pulse=1 session_edges=2 primitive_edges=4 ram_wipe_checked no_stale_done epoch_preserved
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_4bu/tb_channel_pipeline_guards.sv(105)
+#    Time: 117459253 ps  Iteration: 0  Instance: /tb_channel_pipeline_guards
+# End time: 01:25:57 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

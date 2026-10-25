@@ -1,0 +1,82 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_mlkem_service_core.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_mlkem_service_core.transcript.log tb_mlkem_service_core -do "run -all; quit -f" 
+# Start time: 01:46:24 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mlkem_sampler
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.gammas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.compress_seq
+# run -all
+# SERVICE_OP mode=768 op=2 error=11 cycles=2
+# SERVICE_OP mode=768 op=3 error=12 cycles=2
+# SERVICE_OP mode=768 op=2 error=00 cycles=161797
+# SERVICE_PROFILE mode=768 op=2 ntt_busy=6867 mul_busy=1740 sponge_busy=34773 poly_transfer=19456
+# SERVICE_PROFILE_DETAIL mode=768 op=2 hash_io=31222 sample_io=8208 poly=18432 transform=13312 codec=14293 message=0 other=76330
+# SERVICE_OP mode=768 op=1 error=00 cycles=132970
+# SERVICE_PROFILE mode=768 op=1 ntt_busy=5886 mul_busy=1305 sponge_busy=33201 poly_transfer=15360
+# SERVICE_PROFILE_DETAIL mode=768 op=1 hash_io=30452 sample_io=7695 poly=13056 transform=0 codec=13074 message=0 other=68693
+# SERVICE_OP mode=768 op=3 error=12 cycles=2
+# SERVICE_OP mode=768 op=3 error=13 cycles=2
+# SERVICE_OP mode=768 op=3 error=00 cycles=215221
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=10791 mul_busy=2175 sponge_busy=41065 poly_transfer=26624
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=34679 sample_io=8208 poly=22784 transform=13312 codec=33898 message=3328 other=99012
+# SERVICE_OP mode=768 op=2 error=00 cycles=161797
+# SERVICE_PROFILE mode=768 op=2 ntt_busy=6867 mul_busy=1740 sponge_busy=34773 poly_transfer=19456
+# SERVICE_PROFILE_DETAIL mode=768 op=2 hash_io=31222 sample_io=8208 poly=18432 transform=13312 codec=14293 message=0 other=76330
+# SERVICE_OP mode=768 op=3 error=00 cycles=215221
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=10791 mul_busy=2175 sponge_busy=41065 poly_transfer=26624
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=34679 sample_io=8208 poly=22784 transform=13312 codec=33898 message=3328 other=99012
+# SERVICE_OP mode=768 op=3 error=00 cycles=215221
+# SERVICE_PROFILE mode=768 op=3 ntt_busy=10791 mul_busy=2175 sponge_busy=41065 poly_transfer=26624
+# SERVICE_PROFILE_DETAIL mode=768 op=3 hash_io=34679 sample_io=8208 poly=22784 transform=13312 codec=33898 message=3328 other=99012
+# SERVICE_OP mode=768 op=2 error=22 cycles=6
+# SERVICE_OP mode=768 op=2 error=10 cycles=2
+# MLKEM_SERVICE_768: PASS independent_ops external_EK_CT reject_same_latency private_slot zeroize
+# SERVICE_OP mode=1024 op=2 error=11 cycles=2
+# SERVICE_OP mode=1024 op=3 error=12 cycles=2
+# SERVICE_OP mode=1024 op=2 error=00 cycles=245499
+# SERVICE_PROFILE mode=1024 op=2 ntt_busy=8829 mul_busy=2900 sponge_busy=55149 poly_transfer=29696
+# SERVICE_PROFILE_DETAIL mode=1024 op=2 hash_io=51703 sample_io=12825 poly=27904 transform=16640 codec=19067 message=0 other=117360
+# SERVICE_OP mode=1024 op=1 error=00 cycles=210566
+# SERVICE_PROFILE mode=1024 op=1 ntt_busy=7848 mul_busy=2320 sponge_busy=53577 poly_transfer=24576
+# SERVICE_PROFILE_DETAIL mode=1024 op=1 hash_io=50933 sample_io=12312 poly=21504 transform=0 codec=17432 message=0 other=108385
+# SERVICE_OP mode=1024 op=3 error=12 cycles=2
+# SERVICE_OP mode=1024 op=3 error=13 cycles=2
+# SERVICE_OP mode=1024 op=3 error=00 cycles=314462
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=13734 mul_busy=3480 sponge_busy=63526 poly_transfer=38912
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=56600 sample_io=12825 poly=33280 transform=16640 codec=44918 message=3328 other=146871
+# SERVICE_OP mode=1024 op=2 error=00 cycles=245499
+# SERVICE_PROFILE mode=1024 op=2 ntt_busy=8829 mul_busy=2900 sponge_busy=55149 poly_transfer=29696
+# SERVICE_PROFILE_DETAIL mode=1024 op=2 hash_io=51703 sample_io=12825 poly=27904 transform=16640 codec=19067 message=0 other=117360
+# SERVICE_OP mode=1024 op=3 error=00 cycles=314462
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=13734 mul_busy=3480 sponge_busy=63526 poly_transfer=38912
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=56600 sample_io=12825 poly=33280 transform=16640 codec=44918 message=3328 other=146871
+# SERVICE_OP mode=1024 op=3 error=00 cycles=314462
+# SERVICE_PROFILE mode=1024 op=3 ntt_busy=13734 mul_busy=3480 sponge_busy=63526 poly_transfer=38912
+# SERVICE_PROFILE_DETAIL mode=1024 op=3 hash_io=56600 sample_io=12825 poly=33280 transform=16640 codec=44918 message=3328 other=146871
+# SERVICE_OP mode=1024 op=2 error=22 cycles=6
+# SERVICE_OP mode=1024 op=2 error=10 cycles=2
+# MLKEM_SERVICE_1024: PASS independent_ops external_EK_CT reject_same_latency private_slot zeroize
+# MU_STREAM: PASS enc_writes=1024 dec_writes=1536 all_256_positions both_modes secret_clear
+# POLY_PIPELINE: PASS add_writes=68608 sub_writes=1536 operand_and_result_registers
+# MLKEM_SERVICE_CORE: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_mlkem_service_core.sv(284)
+#    Time: 27866340 ns  Iteration: 1  Instance: /tb_mlkem_service_core
+# End time: 01:50:21 on Oct 24,2026, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 0

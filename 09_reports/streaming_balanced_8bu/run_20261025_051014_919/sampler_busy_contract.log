@@ -1,0 +1,16 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\sampler_busy_contract.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_8bu\run_20261025_051014_919\sampler_busy_contract.transcript.log tb_sampler_busy_contract -do "run -all; quit -f" 
+# Start time: 05:22:22 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.tb_sampler_busy_contract
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.mlkem_sampler
+# run -all
+# ** Fatal: Sampler byte load attempted while busy
+#    Time: 34375 ps  Scope: tb_sampler_busy_contract.dut File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_8bu/rtl/sample/mlkem_sampler.sv Line: 256
+# ** Note: $finish    : D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_8bu/rtl/sample/mlkem_sampler.sv(256)
+#    Time: 34375 ps  Iteration: 1  Instance: /tb_sampler_busy_contract/dut
+# End time: 05:22:22 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

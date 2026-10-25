@@ -1,0 +1,23 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\tb_ntt_banked_guards.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked_cycle_opt\run_20261025_060635_998\tb_ntt_banked_guards.transcript.log tb_ntt_banked_guards -do "run -all; quit -f" 
+# Start time: 06:07:34 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.tb_ntt_banked_guards
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.poly_bank_128_sdp
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.gammas_rom
+# run -all
+# NTT_BANKED_GUARDS: ALL TESTS PASS transforms=104 multiply_runs=12 schoolbook_convolutions=8 reset_aborts=12 stages=739 ntt_intt_cycles=906 mul_cycles=143 II=1
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/continuous_banked_cycle_opt/tb_ntt_banked_guards.sv(271)
+#    Time: 1026495007 ps  Iteration: 0  Instance: /tb_ntt_banked_guards
+# End time: 06:07:53 on Oct 25,2026, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0

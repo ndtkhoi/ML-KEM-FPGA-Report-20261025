@@ -1,0 +1,23 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\tb_channel_pipeline_guards.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked\run_20261025_085959_024\tb_channel_pipeline_guards.transcript.log tb_channel_pipeline_guards -do "run -all; quit -f" 
+# Start time: 09:04:46 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.tb_channel_pipeline_guards
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.channel_session
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.channel_kdf
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.ghash_mul
+# run -all
+# CHANNEL_PIPELINE_GUARDS: ALL TESTS PASS clear_during_Keccak_AES after_result clear_pulse=1 session_edges=2 primitive_edges=4 ram_wipe_checked no_stale_done epoch_preserved
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/continuous_banked/tb_channel_pipeline_guards.sv(108)
+#    Time: 122578741 ps  Iteration: 0  Instance: /tb_channel_pipeline_guards
+# End time: 09:04:47 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

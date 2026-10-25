@@ -1,0 +1,17 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\tb_clock_uart_100.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked_cycle_opt\run_20261025_060635_998\tb_clock_uart_100.transcript.log tb_clock_uart_100 -do "run -all; quit -f" 
+# Start time: 06:07:29 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.tb_clock_uart_100
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.clock_100
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.uart_tx
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.uart_rx
+# run -all
+# CLOCK_UART: ALL TESTS PASS ref=50MHz core=160MHz cycles_per_bit=1389 measured_bit_ns=8681.250 average_period_ns=6.250000 115200_8N1 reset_relock
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_clock_uart_100.sv(65)
+#    Time: 445018750 ps  Iteration: 1  Instance: /tb_clock_uart_100
+# End time: 06:07:30 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,834 @@
+﻿{
+    "run":  "20261023_233228_764",
+    "project":  "D:\\ML_KEM_768_1024\\05_quartus\\iterative_baseline\\mlkem_iterative_baseline_de10.qsf",
+    "rtl_count":  33,
+    "top":  "mlkem_channel_top",
+    "simulation_defines":  [
+                               "+define+ITERATIVE_BASELINE_TIMING_FIX"
+                           ],
+    "modelsim_bin":  "D:\\QUARTUS\\modelsim_ase\\win32aloem",
+    "python":  "C:\\Users\\KHOIDEPZAI\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "tests":  [
+                  "tb_mod_mul_pipeline",
+                  "tb_compress_seq",
+                  "tb_codec_sampler",
+                  "tb_clock_uart_100",
+                  "tb_ntt_intt",
+                  "tb_multiply_ntts",
+                  "tb_keccak_sponge",
+                  "tb_keccak_sponge_clear",
+                  "tb_keccak_kat",
+                  "tb_random_subsystem",
+                  "tb_mlkem_service_core",
+                  "tb_channel_crypto",
+                  "tb_channel_record",
+                  "tb_channel_top"
+              ],
+    "files":  [
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\arithmetic\\mod_add.sv",
+                      "sha256":  "4462D559DA613093B877438FA0D2BB34D476C0DF5EAA71359550B6691AEF8280"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\arithmetic\\mod_sub.sv",
+                      "sha256":  "2B4AD9D1BABA3D443697517D35897793B6F35F5B40D825FCED5AB967B7375A81"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\arithmetic\\mod_mul_pipe.sv",
+                      "sha256":  "BE410312983884086C75FED0A6A94F79153C0AD9D2CBC88D70B45B965B68DE84"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\mem\\poly_ram_dp.sv",
+                      "sha256":  "2EE7F8E12E6617E5065C075121E2D4CEDE97452B452C594D7A21B9205A02F098"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\ntt\\zetas_rom.sv",
+                      "sha256":  "8B9B26006ABA33637B0263C8B44B3AEF302FD12E6AD08580B4C03F0265958B5C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\ntt\\gammas_rom.sv",
+                      "sha256":  "D46B2D15664399CAFB6ED07B4638C3F7EBF2B23F7E2BD9719614C958AEFD2EB1"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\ntt\\ntt_core.sv",
+                      "sha256":  "5C1386EFF5840D47A81AFEE8BF81C50606F51B3CCFCF0C0CA2046DD54C218A40"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\ntt\\multiply_ntts_core.sv",
+                      "sha256":  "290D3AEB92EA49003DF6900D5A78930C49B6F08C9E85C97819A56150DDC5CA08"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\hash\\keccak_round_constants.sv",
+                      "sha256":  "3887E53F9DD844301CC1F15C28510A9939A450CE683555F3772DE65964F6B43D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\hash\\keccak_round.sv",
+                      "sha256":  "92BE1F739144605659FB9B8837D58AA830922F6EE84CF7D0D31F2C87B3691C03"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\hash\\keccak_f1600_core.sv",
+                      "sha256":  "6AF09D55B6BEFA78D1895418BCF524D57745EA8D6FF6C4294D8FFEB1DB405754"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\hash\\keccak_sponge.sv",
+                      "sha256":  "DF3075B1DB8B9F9E2C14B86D3DBDD3A631AF876257C40A9FA8014D2E1BCAAA28"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\random\\fpga_ro_entropy.sv",
+                      "sha256":  "2BC0218506263B95DE2DD77C67C369A58E446772DF69FB20143C4F8522854A45"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\random\\entropy_health.sv",
+                      "sha256":  "C6E2E8BE8BB551F40A9ED6CE38EA5217D1C2C9EB11D3D9F30E0CCD6B2C31B7E3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\random\\shake256_drbg.sv",
+                      "sha256":  "6CE9AA0F72C77E76934C40FCF3892A44BECB4DF708D891B75159D424EA8D1367"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\random\\mlkem_random_manager.sv",
+                      "sha256":  "CD0100F234324549B3C3CF9D0DC971E409B32F7B50EEDF6C275ABD9D6C0EB8C6"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\codec\\compress_decompress.sv",
+                      "sha256":  "523FDD7AAFDE01A1F858340EF7C368E38FE8D41B9ABD15BB89908788160F114C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\codec\\compress_seq.sv",
+                      "sha256":  "73DB0B6F4152215FE69939AF6940B09F966E9D657B893EB73D4A90133FE71D94"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\codec\\byte_codec_core.sv",
+                      "sha256":  "D7AFF34D6320D40FF2A2F0405C1C35891E8AC70571AB2CC473A769A3D203E52D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\sample\\mlkem_sampler.sv",
+                      "sha256":  "456EE552F955CDEB6733E66E1C04F32D27633FC1EA0ED947A251C9EF9A067408"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\uart\\uart_tx.sv",
+                      "sha256":  "5B32C4679926B99185DE469F607BC281454D331F5F8967CD17080C4A719CFEA2"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\uart\\uart_rx.sv",
+                      "sha256":  "4A5728F0A58ACD3F9D81F940AF7193614F29C7FC0F7AB0ED03A63B71F7E51D93"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\display\\seg7_decode.sv",
+                      "sha256":  "6778C815E9C904FB08313E63AFF544981C2FB09B596E348EB0B8B146AD25B867"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\top\\clock_100.sv",
+                      "sha256":  "4CBA047C24ACDB6BB2AD4B5468FE006A25F83D0BD87EDBC339C8EDE3F8446F1F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\core\\mlkem_service_core.sv",
+                      "sha256":  "6F149E109CE280F131B101A733618812A716E0AF3C050EE6B3464BA52C9D7616"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\uart\\channel_kem_uart.sv",
+                      "sha256":  "3F158E8E5B1F395C32466CA2071023D618245A3D6452F5CCA304FA510B21BC5F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\aead\\aes256_block.sv",
+                      "sha256":  "96B3B87C608C4C1183913E5FB7924F055F8766493A94F6BB6C1056348B4B8775"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\aead\\ghash_mul.sv",
+                      "sha256":  "B59DE95566E14D9C63AB200C7CA0AB33FFF7CD168F311B8EFC5784DBC31A2B9B"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\aead\\aes_gcm_core.sv",
+                      "sha256":  "3FA51ACCF88B3700B8049647E4589721D2E3A1897FD60B826C63044E3B84D1B9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\aead\\channel_kdf.sv",
+                      "sha256":  "475B15CDDA259ABAFA59DEE2C269B7546617D960CCC1BA5CE54939ABE6CD5132"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\aead\\channel_session.sv",
+                      "sha256":  "BC40F785E1570AA298F88318B548659E8B98E8664218842ECD2FEC2CE2A08736"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\uart\\channel_record_uart.sv",
+                      "sha256":  "A8B0C12B928CBCE1B208A7054965C7C80B85BB92EFCB848503C62AE4BF93EA08"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\rtl\\top\\mlkem_channel_top.sv",
+                      "sha256":  "97FDAABF41F934802D13939BAE71769C276E8DB377467F53F2680EF3752C5B89"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_mod_mul_pipeline.sv",
+                      "sha256":  "C8963B1960D5BF7838CA135DFBC36CA802FEB29EDCDD10F4C1247070D1E9C2E7"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_compress_seq.sv",
+                      "sha256":  "A4C8FF8B3690596A30E83A37C8C68D93B9D5E22AE1B249538D301C849AE7B683"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_codec_sampler.sv",
+                      "sha256":  "3BBEF756E5395383C218AEBB4FCB036958E8C54C99B759D226207C4096D479F9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_clock_uart_100.sv",
+                      "sha256":  "556A7015743B0536C9A21C8D0EA7745C8030CAAD7812C6B470F326669E59DBE4"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\unit\\tb_ntt_intt.sv",
+                      "sha256":  "A7F2DF6F6C15C0BB2D6362A4E12AF349C0D0DBFB350579146CAB1A767123A43C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\unit\\tb_multiply_ntts.sv",
+                      "sha256":  "A2440168B4581DBDCD68E856B5EEA0464D21242A18634F3DEF371E6BB18AE494"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_keccak_sponge.sv",
+                      "sha256":  "6A35610DF66F724DC82877B5F2C2DB31F629728D8AD42D4E5B2C96AC6DEF11CF"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\architectures\\iterative_baseline\\tb_keccak_sponge_clear.sv",
+                      "sha256":  "D3479FF8A8C4FD7E5D31E386BFE269DF2EA4B0A9F88EE8481E332F1D10F1AB59"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\unit\\tb_keccak_kat.sv",
+                      "sha256":  "224165FD7ED5AD9EC171D8F6068BD9F25BDE46D130E5A23F4C346F9001EBC192"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_random_subsystem.sv",
+                      "sha256":  "A509DEBB8A3025729069948AE05B2235901C34C51FFBB0174C53A1E5DFCB8237"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_mlkem_service_core.sv",
+                      "sha256":  "9DE2399EAFDA7DBCE3A8F1FEC14AF16F648A83DDE253725F3BEE1EF40119C797"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_channel_crypto.sv",
+                      "sha256":  "622591F6B459B28F6E4DD3081B49BB1BCB2FC6B33A039B2DFF8D5601976F5C2A"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_channel_record.sv",
+                      "sha256":  "3EAADE395871FB2C76034341DF9A9A77489E2BC2001E787427C68E2868AB5004"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\02_tb\\full\\tb_channel_top.sv",
+                      "sha256":  "526AC0E1957A66DC4B398125FDBE62E1F5619BCDE371FA2D04B70179AB53E3F3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\05_quartus\\iterative_baseline\\mlkem_iterative_baseline_de10.qsf",
+                      "sha256":  "B9EBF7A98B34AF01C36DA409895B64649EDD5B15E8D00E9320679A900F4379A1"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\iterative_baseline\\constraints\\mlkem_channel_160.sdc",
+                      "sha256":  "D1587376BC8BD7E500DAC19938CDC2887F5868F7AAF7EA0115E05066EED162A5"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\07_scripts\\run_iterative_baseline_regression.ps1",
+                      "sha256":  "2D3A247A462769E8E3D62AD0EC7F2201A8466FA27F261E37803485B919D7CDA9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\acvp\\encap_decap.json",
+                      "sha256":  "A556952CE869BB89C3A3196A701DAD89647C193A34C86EAFB61A9D710D5B810F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\acvp\\keygen.json",
+                      "sha256":  "D7A62A2C3476957F56DD8D24F9004EA6776CCFE995FFE71A65BB9506DC9C7B1B"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\arithmetic\\mod_arithmetic_vectors.txt",
+                      "sha256":  "EAF5E2310502BAE0F8C2731A3DAC41FFD7F3D618BFFF3C85D9A39CE4FAD4A918"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\aad.mem",
+                      "sha256":  "652D72F0CFD6635B84421E254103BB16F9760CF09CBB62CFD24E5B3CE4AF2847"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\alen.mem",
+                      "sha256":  "3C0A0F341D1594CE079EEDB8F59A6522D845CFA4A72669835AA6DC108B8C58DC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\boundary_hash.mem",
+                      "sha256":  "F870918E6A0E7470D51588C5E13BDBC9C0B5BB7579C9DFA8BAD8E68DA843DE4A"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\hash.mem",
+                      "sha256":  "933B702813631A6F534EB4197DE243DE809B5FCCFB85B37A3DDE770DBE7830A0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\input.mem",
+                      "sha256":  "2FAAB12B88BF14A36F2684EE8ABE9AFD36B5C1B7BC3E9747F19829CF32C8957D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\iv.mem",
+                      "sha256":  "B66A18A22AE4276CB4B7E725DC9E891538B98E0A7558973C43553BB4E9FED172"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\kdf.mem",
+                      "sha256":  "9D00604478BD924A2033D1FC7C4436D81C2FD1C5C378C4D3E228177FD0EFAB40"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\key.mem",
+                      "sha256":  "14771A33C86E7488F59AEAC2DDADB491BBB552EE660A09D85E1D721C3CC028C0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\len.mem",
+                      "sha256":  "2D801C523B288F206362F8FFC3747DFCFF39DA81DD1001A63BB0B8C24EE370DC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\message_hash.mem",
+                      "sha256":  "25081766B5BB428820CD6D54F21A20CCDC9BF1199C1979042C986DDD405D6FE3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\message_in.mem",
+                      "sha256":  "DDD09080810D0BCCA54F652D39A0E2B71ABE7C2E5D2E4E28F5315F7418CBF8BC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\message_lengths.mem",
+                      "sha256":  "C4A00D262DBB957BDDD970716452286FB42ACF1B86425C3AB6503722B8BB77C3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\message_out.mem",
+                      "sha256":  "D3B8E17F7E01CCC27945C21D2A793A312EF1EC940969FEAB8C0F31019A411AFA"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\output.mem",
+                      "sha256":  "8C225C4DC7D3AC4A2E71738AB593DD05C4CADBB48CA5C553E86BFC645DFCBEEE"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_1024_0.mem",
+                      "sha256":  "E894BC597FF1AEAFFA1FC44660D38FDCC89B1443E0589C6E9B6CDF05C3B52C3C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_1024_1.mem",
+                      "sha256":  "2037EDA08AECF947B4ACB4EB8A78AA37F2734663621B84F8A298BA8953E51ED9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_768_0.mem",
+                      "sha256":  "896BAEF91EC1139531C42ED8069AE11F88641B727BCC38F9B3C5F52B4057BDBC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_768_1.mem",
+                      "sha256":  "398EE230515808E5F53A4A5AAE499BFE847735A4AA3687384D70D12C647C9CC7"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_1024_0_0.mem",
+                      "sha256":  "ED82E38A5990221C41DDC2E73CBFB7663822A8D42CE9BA94987F3DEAF79FE5AF"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_1024_0_256.mem",
+                      "sha256":  "CDA6C81217F090F523680C57F44D260ED6CFF16AB117F1E8BC519D7B043D8BFA"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_1024_1_0.mem",
+                      "sha256":  "1E9A08CFFFBE4CD3CB675026346D8806715DFBFAFE9B4F9CFCBCE35B6357709D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_1024_1_256.mem",
+                      "sha256":  "B9A75CA8FF278346D9DF713486CA2C76CE707A26B7D15890D2985BFE52184788"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_768_0_0.mem",
+                      "sha256":  "D0A4D2726F0C7D98BB2FADA65CD24927D303F06213D62DD6BA80EA9C66188EE0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_768_0_256.mem",
+                      "sha256":  "8884060E9654DD2A2795AD42FFE817DF9B675D7F3A4F6810E500FAD11C9CB188"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_768_1_0.mem",
+                      "sha256":  "E1B057E070EDE7E3C6BBF541069363467C1DAF4B9B51902C427B6AAF5899886F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\rx_boundary_768_1_256.mem",
+                      "sha256":  "B0C14C14889EC9310674F6F78447E1445CD11AFCD331F0741590725CC62C7D1C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tag.mem",
+                      "sha256":  "099A8123617E3C13E6A095DB4F197D80EF408BF96D532D448AC67704A0B41A57"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\top_kem_ct.mem",
+                      "sha256":  "4ED2A4EA322969DFB266790C34CDE8436C39ECD5A8B82D678D620E31FB5A3DE0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\top_rx.mem",
+                      "sha256":  "A6F6666803100064D9804F3AAA08FC95460C2E041B262B1A16F795AB983DC1D8"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\top_tx.mem",
+                      "sha256":  "B25AF51999C6B913FF238B105D1AC70BB1DE4A926C00408281FA99EDA5352AEB"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_1024_0.mem",
+                      "sha256":  "12DF5357E76FAC18CCA3F6471D02831554DD5F15297C85473FD01C791FC03FE8"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_1024_1.mem",
+                      "sha256":  "351965D4FBAF68FF8B8CF1E076980B156F484F82E30CE7CE418CA54254C2ACB5"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_768_0.mem",
+                      "sha256":  "F006E0B10F5C6E7A32D82A697C1DD7837CA7591E335AB6921A3D2A7F85034B21"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_768_1.mem",
+                      "sha256":  "96865C8B5544556198E294A61A54029BA735C2318DE2001B2CD8C656B59D83A1"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_1024_0_0.mem",
+                      "sha256":  "1E9A08CFFFBE4CD3CB675026346D8806715DFBFAFE9B4F9CFCBCE35B6357709D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_1024_0_256.mem",
+                      "sha256":  "B9A75CA8FF278346D9DF713486CA2C76CE707A26B7D15890D2985BFE52184788"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_1024_1_0.mem",
+                      "sha256":  "ED82E38A5990221C41DDC2E73CBFB7663822A8D42CE9BA94987F3DEAF79FE5AF"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_1024_1_256.mem",
+                      "sha256":  "CDA6C81217F090F523680C57F44D260ED6CFF16AB117F1E8BC519D7B043D8BFA"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_768_0_0.mem",
+                      "sha256":  "E1B057E070EDE7E3C6BBF541069363467C1DAF4B9B51902C427B6AAF5899886F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_768_0_256.mem",
+                      "sha256":  "B0C14C14889EC9310674F6F78447E1445CD11AFCD331F0741590725CC62C7D1C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_768_1_0.mem",
+                      "sha256":  "D0A4D2726F0C7D98BB2FADA65CD24927D303F06213D62DD6BA80EA9C66188EE0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\channel\\tx_boundary_768_1_256.mem",
+                      "sha256":  "8884060E9654DD2A2795AD42FFE817DF9B675D7F3A4F6810E500FAD11C9CB188"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\codec\\compress_decompress_vectors.txt",
+                      "sha256":  "A86EC513F06D489687A804A767158594BB3B46E7A09762DBDCBF6D8243B3FE33"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d10_coeff.hex",
+                      "sha256":  "7C8A93BD95BFB12BCEDC30B835D5AFEFA5AE001907B0C0E061C3827EB27CCF6F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d10_packed.hex",
+                      "sha256":  "2AB7BB5CE2F21D72F5D288380A22046C4AB67C919448CDA587799E2BA658A207"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d11_coeff.hex",
+                      "sha256":  "C2DDAA6DE27B87F46136E43F7A8F3627FBEF552F34DEDE6CCA678918AAB13AD3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d11_packed.hex",
+                      "sha256":  "878C2EFD1D31D45279E6CDBBB00A5C62757C1E58355C1F3A6F27F42DB91ECE15"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d12_coeff.hex",
+                      "sha256":  "D73386281961A04882A6FF0CFB1035B00E205F48013A971FE213FAD37CCAFE44"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d12_packed.hex",
+                      "sha256":  "7B9874918BE80277BF2A94B6F32F49DC879344517DA4331876A59DBB3A9A0666"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d1_coeff.hex",
+                      "sha256":  "43CFB19D0A6F23D1113DE21750883A662295D82BE0B664815F7F5C2D1B180E79"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d1_packed.hex",
+                      "sha256":  "349053AC401693DBF2B04CFA4AD3EC2F4BF08D13F6FA702EFF88702D3EB49157"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d4_coeff.hex",
+                      "sha256":  "B5240689476014D3ECF8A232BD419D77515E9E92E868B8656E811F87AE0F9772"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d4_packed.hex",
+                      "sha256":  "7C98F6033F0DB2C6A53E434D81B3EF8393FBDDF7EAD0E6E820A6D94BA638DACD"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d5_coeff.hex",
+                      "sha256":  "05F13488B9001F364A578C3BDB50DFB1C1E720B4E0AAC8CF84471E080019EAF7"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\codec\\d5_packed.hex",
+                      "sha256":  "8149875737EF76713695D820FE460B82216C2512520879AED814829635EFEC48"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_ct.hex",
+                      "sha256":  "2657BD75B6F804EF89A4614A626C8B85CB230B4258B87E2F240A252E43C09266"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_d.hex",
+                      "sha256":  "F70F448595C4A3579148382D71495362C84518F261D961F6AE91DC2FA8A2010F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_dk.hex",
+                      "sha256":  "5D687695568F060BF610728F55F1C8774452A9080C61C205ECDF27F655B34411"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_ek.hex",
+                      "sha256":  "CF54453FBBEBEF6F993BDAD5D9F49FB88574E72981C0963BFF1E2FADEE84AF00"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_m.hex",
+                      "sha256":  "FCC90E2782616705C3417A3557A294BF09C0B8A9F5D7CB01E59B07DC938E6D2D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_ss.hex",
+                      "sha256":  "CD48107052A966A657575F8334495D0CDA893E6FEAC778EF2CCC24C141A51798"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_ss_reject.hex",
+                      "sha256":  "8DC7489B235D4986AF25F41758012D7F82C2DDE7A5AD1CB5B754369EC8CB6DDA"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem1024_z.hex",
+                      "sha256":  "52C0ED4C1B4A3B6A471FDBB9A24DF3B709251AF25DC218EE0BBB9D29193AF750"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_ct.hex",
+                      "sha256":  "4ED2A4EA322969DFB266790C34CDE8436C39ECD5A8B82D678D620E31FB5A3DE0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_d.hex",
+                      "sha256":  "F70F448595C4A3579148382D71495362C84518F261D961F6AE91DC2FA8A2010F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_dk.hex",
+                      "sha256":  "4C54668E2EA0D4B0984D81CBCC6DB2717A5C1E36C00BF29B38672646AF1D9541"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_ek.hex",
+                      "sha256":  "4BE66FC32BAC2EEBCE607C5E30EE1658D5D46704BC1581AD6CDC1BE14E801953"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_m.hex",
+                      "sha256":  "FCC90E2782616705C3417A3557A294BF09C0B8A9F5D7CB01E59B07DC938E6D2D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_ss.hex",
+                      "sha256":  "A0DBAB4B950FF10EF5A4F44F67C86A47A54524144ACE7B7EBB2C122B89DB32B9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_ss_reject.hex",
+                      "sha256":  "BB51D30B26979DAC8F2FEE907CD48F88CDCAE7263F4A19623C8DBCFF20054057"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\kem\\mlkem768_z.hex",
+                      "sha256":  "52C0ED4C1B4A3B6A471FDBB9A24DF3B709251AF25DC218EE0BBB9D29193AF750"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sample\\cbd_expected.hex",
+                      "sha256":  "A7FCF8803F5C217DE6C7E56AC1942BDB054A4DD95D595374D6DD98C380DB091C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sample\\cbd_stream.hex",
+                      "sha256":  "FC80171B6209105804E1030B9A9655D1A0773C60307BE9076F0C002AC61CF212"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sample\\ntt_expected.hex",
+                      "sha256":  "FFF0F600681C97F82DB7E98126684AB536027E383E979E2895321213B830AB64"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sample\\ntt_stream.hex",
+                      "sha256":  "B1261A51905EB504D4732FD275CCDAD3A48A894E78987DCFEC2A5A045845FB48"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\sha3_256_empty_expected.hex",
+                      "sha256":  "79ED52CAC4A5A2CD9899B08C456E6F7E9820E3490CACC2BFC66F8AD78FE8655D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\sha3_256_empty_input.hex",
+                      "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\sha3_512_abc_expected.hex",
+                      "sha256":  "F32F5AEA0A210446A592C2CF1B7A088CC622F22CC9033C61C7C29F223A3B29CC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\sha3_512_abc_input.hex",
+                      "sha256":  "6E9EA57CC1CEE2FEC0C22293F8B859E596C03C9022354AE25465499C1FDC1E40"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\shake128_multiblock_expected.hex",
+                      "sha256":  "FBDE48DE6EC2DA29314A89C2CA60894B49725496F5A95F676537F38931DABCC0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\shake128_multiblock_input.hex",
+                      "sha256":  "1AB3EDA6DCF387ED53CC6BE989682E31CCFB95EE4847615F8BA17F168ED48EB4"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\shake256_long_expected.hex",
+                      "sha256":  "D75CF65693F0C79D806E6FE4C62C2D65172038E0412A978EAA1162742FEC0F39"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\full\\sponge\\shake256_long_input.hex",
+                      "sha256":  "884ECF28F7323E563B264AA13FA09AD1DA2C67282384E1DC43BB0C456C8434C8"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\intt_expected.hex",
+                      "sha256":  "A04E51DFD04735005EB32B3AB4610248C8D1FA1A82302145E2992887C042EC68"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\intt_input.hex",
+                      "sha256":  "7F8ED383E35367B7176A6584A6127F95EE70AD00493D8B315BA5E213C970CA7C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\mul_a.hex",
+                      "sha256":  "88AB093F2E3E0AAC8CA108ED39D38DA063E8D5FCB63A6D31D1DB4117E0C8AE69"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\mul_b.hex",
+                      "sha256":  "A9CD5587F2C676F6F445AA39D8185DA01532F91588FB8F0A0EB1A1FB490DD63B"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\mul_expected.hex",
+                      "sha256":  "E2F3A4030D21E73E673B162F2787C2A263A48DDDE01841030068F228B1FFC583"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\ntt_expected.hex",
+                      "sha256":  "7F8ED383E35367B7176A6584A6127F95EE70AD00493D8B315BA5E213C970CA7C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\ntt_input.hex",
+                      "sha256":  "A04E51DFD04735005EB32B3AB4610248C8D1FA1A82302145E2992887C042EC68"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\ntt\\zetas.hex",
+                      "sha256":  "589934825FEA5ED1580AD2C3861CB40E59D552EC169E4100146CDA85BA7A4A86"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_bad.mem",
+                      "sha256":  "EF2523ACD1C5EC179BE3C314FFAE3B5023DF4C9ABC9505A9C593C7BF35077097"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_ct.mem",
+                      "sha256":  "2657BD75B6F804EF89A4614A626C8B85CB230B4258B87E2F240A252E43C09266"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_d.mem",
+                      "sha256":  "F70F448595C4A3579148382D71495362C84518F261D961F6AE91DC2FA8A2010F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_dk.mem",
+                      "sha256":  "5D687695568F060BF610728F55F1C8774452A9080C61C205ECDF27F655B34411"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_ek.mem",
+                      "sha256":  "CF54453FBBEBEF6F993BDAD5D9F49FB88574E72981C0963BFF1E2FADEE84AF00"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_fp.mem",
+                      "sha256":  "46199B882BAE5E3C098647CF66AEE7C918A5E8AAC94A425B40D24534A6B395B7"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_m.mem",
+                      "sha256":  "FCC90E2782616705C3417A3557A294BF09C0B8A9F5D7CB01E59B07DC938E6D2D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_reject.mem",
+                      "sha256":  "8DC7489B235D4986AF25F41758012D7F82C2DDE7A5AD1CB5B754369EC8CB6DDA"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_reject_fp.mem",
+                      "sha256":  "6B8B9EF8D936D3E0142F225B39A5A06D3B4B253FD07AD682B1106C800B4AADFF"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_ss.mem",
+                      "sha256":  "CD48107052A966A657575F8334495D0CDA893E6FEAC778EF2CCC24C141A51798"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_a_z.mem",
+                      "sha256":  "52C0ED4C1B4A3B6A471FDBB9A24DF3B709251AF25DC218EE0BBB9D29193AF750"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_bad.mem",
+                      "sha256":  "17A1125B54532D0B786CCC700AD072924A5CABF1BE44169AA5949538C65E956E"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_ct.mem",
+                      "sha256":  "BF2B9AEE2552DAA0C9262A902B1EF280206EFAB5C24F77769C13CC16DBE810AF"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_d.mem",
+                      "sha256":  "158803649837D3AC7108F01BDF11401DB60BFCFC6B4071F84F6E9CA6650AAECC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_dk.mem",
+                      "sha256":  "DEBAAD686C33A87EDCA0485953F76107B6AF6373253325613684B1ECB1148249"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_ek.mem",
+                      "sha256":  "B40C59073F8AC38A72E7D77049DD37618991D14E8109F68B5915DEF0C04ED129"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_fp.mem",
+                      "sha256":  "8009127E98B2CA2B2788E7CE3FCD478B339A0158788F933D25064A2679F37535"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_m.mem",
+                      "sha256":  "B91221229A6D8D7F5014FFAC27DCC8A33394348827ADF34E58B89A32DC4EFE24"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_reject.mem",
+                      "sha256":  "8EBCCB1A267DEE03973E4214B22D7D03A3A0879E4AAA8D4E1CBFF053531F1225"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_reject_fp.mem",
+                      "sha256":  "F28E5526524DF52DB36009D8843AD9DE22699453C7CCC6C292E4B02836A06EF0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_ss.mem",
+                      "sha256":  "68893768EC309A9006239719A8D9C71CE9151BBFAB292ECD687A4D1491270329"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\1024_b_z.mem",
+                      "sha256":  "0936AF3411766586C511FEEE101D08A5169D6FDB6FD2DAF2AE17B963EAB7BD3E"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_bad.mem",
+                      "sha256":  "678F2ACA4DA7D7D902E28E0E81F3A494B2572A8EFDC4A01A29C574DCB439010F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_ct.mem",
+                      "sha256":  "4ED2A4EA322969DFB266790C34CDE8436C39ECD5A8B82D678D620E31FB5A3DE0"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_d.mem",
+                      "sha256":  "F70F448595C4A3579148382D71495362C84518F261D961F6AE91DC2FA8A2010F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_dk.mem",
+                      "sha256":  "4C54668E2EA0D4B0984D81CBCC6DB2717A5C1E36C00BF29B38672646AF1D9541"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_ek.mem",
+                      "sha256":  "4BE66FC32BAC2EEBCE607C5E30EE1658D5D46704BC1581AD6CDC1BE14E801953"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_fp.mem",
+                      "sha256":  "E6B53FFBA7BD60A23F466BEE5067C0F1716D826A21C393949CF8623A1833353A"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_m.mem",
+                      "sha256":  "FCC90E2782616705C3417A3557A294BF09C0B8A9F5D7CB01E59B07DC938E6D2D"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_reject.mem",
+                      "sha256":  "BB51D30B26979DAC8F2FEE907CD48F88CDCAE7263F4A19623C8DBCFF20054057"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_reject_fp.mem",
+                      "sha256":  "707F73E0AF0B061A8EFFF4B1624A3A85FAF6AEE3B3DD065810AF6E166DA88607"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_ss.mem",
+                      "sha256":  "A0DBAB4B950FF10EF5A4F44F67C86A47A54524144ACE7B7EBB2C122B89DB32B9"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_a_z.mem",
+                      "sha256":  "52C0ED4C1B4A3B6A471FDBB9A24DF3B709251AF25DC218EE0BBB9D29193AF750"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_bad.mem",
+                      "sha256":  "3BA98F09306ED6E6B3555B8FBE89743D73D2C0F0415B833DD8FCCE633C1358AB"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_ct.mem",
+                      "sha256":  "0573D77D75A85736198CD5901D5A0E7ED1A56D0DDF7DC8BA74C7B55D2FD20AA3"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_d.mem",
+                      "sha256":  "158803649837D3AC7108F01BDF11401DB60BFCFC6B4071F84F6E9CA6650AAECC"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_dk.mem",
+                      "sha256":  "848DE91BD149D09DEDE2B4B9C6D503E0AF47A108F291608BF59A1542C896D8D8"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_ek.mem",
+                      "sha256":  "3E2F07F508A826BAE45EF4921B7C431DD7A0B13CCDDB9ECC1A51BF3BEF62650A"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_fp.mem",
+                      "sha256":  "7E8C9159C6A2591C4EA7F39B024DDCA2D4A0132627736AA2B01DAF8BBBEA3111"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_m.mem",
+                      "sha256":  "B91221229A6D8D7F5014FFAC27DCC8A33394348827ADF34E58B89A32DC4EFE24"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_reject.mem",
+                      "sha256":  "CEB062382BE4BB6816236597AC993AFCA28096CA79A2EE76AC1CF56C6CE38515"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_reject_fp.mem",
+                      "sha256":  "F93CE8ACD864FFF2AEA3E312160E9F49336E67F6C4AD918F5DB040741B91DE8F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_ss.mem",
+                      "sha256":  "19702E702E3271672722A584251FAD3588A4DF3944C4999A5B8F876A06341002"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\03_vectors\\service\\768_b_z.mem",
+                      "sha256":  "0936AF3411766586C511FEEE101D08A5169D6FDB6FD2DAF2AE17B963EAB7BD3E"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\channel_demo.py",
+                      "sha256":  "FFC5B7F08ED821D99AEC6450F249661FDF6DB1EFFF1294B173D8B0444450FA93"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\channel_ref.py",
+                      "sha256":  "253E6A579B90056196FEA94336052DED022696B9032636B7FF69B09B0D9F5C1B"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\codec_ref.py",
+                      "sha256":  "8E18B9470D975FFBF45C83C6A590BD78A89DA9954CCF0B5103BB40D61EE031BE"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\generate_channel_vectors.py",
+                      "sha256":  "FF8F902E35196C65E024FE8AFBC1BAC1B5ABC1A3EAA69F743408F89D7AAE2B1F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\generate_full_vectors.py",
+                      "sha256":  "10FAB41E3E4722FBB8CC31A26D74CB27EE33B831A3E8CB3C48722011B8049457"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\generate_report3_vectors.py",
+                      "sha256":  "7278DC82194D483D9149A9A105D06F303A3A94DBE58155A2F3B7AB11CB575F3A"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\generate_service_vectors.py",
+                      "sha256":  "44E0482BA493473857E7EF33A705B58849F6CCA46D8F91E2F9775A479635E77C"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\mlkem_full_ref.py",
+                      "sha256":  "1165DEAD2A494781F106B91372DB2B0B7062EA78F8CF607E8A2A469AD40CE23F"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\mlkem_params.py",
+                      "sha256":  "803056533A80DB5174F0588180F47677C0640D37A39C526C02DC4FAC29FF0959"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\mlkem_service_host.py",
+                      "sha256":  "406EE51CD003C97D840B4AFF9F990A32789A38C1EA87FD8D421F550E50EFABF6"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\mlkem_uart_oracle.py",
+                      "sha256":  "16619DCA70FF99B8CB013BF0D9896E25AED97806126EC6654D72E815A18B0201"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\ntt_ref.py",
+                      "sha256":  "BDFFF9943781533835C5D471287EC5DA5559164F578FAD72756F8B9F41726586"
+                  },
+                  {
+                      "path":  "D:\\ML_KEM_768_1024\\04_sim\\iterative_baseline\\run_20261023_233228_764\\08_model\\python\\validate_mlkem_acvp.py",
+                      "sha256":  "819139E4F5F6806D9F37AB8EAB0522699084A9FAFB5380EFBBB4501451982552"
+                  }
+              ],
+    "scope":  "RTL functional regression. Python ACVP validation is not direct RTL ACVP certification. No Quartus compile or STA."
+}

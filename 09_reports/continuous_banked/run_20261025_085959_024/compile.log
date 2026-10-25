@@ -1,0 +1,477 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:03 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\arithmetic\mod_add.sv 
+-- Compiling module mod_add
+
+Top level modules:
+	mod_add
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\arithmetic\mod_sub.sv 
+-- Compiling module mod_sub
+
+Top level modules:
+	mod_sub
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\arithmetic\mod_mul_pipe.sv 
+-- Compiling module mod_mul_pipe
+
+Top level modules:
+	mod_mul_pipe
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\mem\poly_ram_dp.sv 
+-- Compiling module poly_ram_dp
+
+Top level modules:
+	poly_ram_dp
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\mem\poly_bank_128_sdp.sv 
+-- Compiling module poly_bank_128_sdp
+
+Top level modules:
+	poly_bank_128_sdp
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\ntt\zetas_rom.sv 
+-- Compiling module zetas_rom
+
+Top level modules:
+	zetas_rom
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\ntt\gammas_rom.sv 
+-- Compiling module gammas_rom
+
+Top level modules:
+	gammas_rom
+End time: 09:00:04 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:04 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\ntt\ntt_core.sv 
+-- Compiling module ntt_core
+
+Top level modules:
+	ntt_core
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\ntt\multiply_ntts_core.sv 
+-- Compiling module multiply_ntts_core
+
+Top level modules:
+	multiply_ntts_core
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\hash\keccak_round_constants.sv 
+-- Compiling module keccak_round_constants
+
+Top level modules:
+	keccak_round_constants
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\hash\keccak_round.sv 
+-- Compiling module keccak_round
+
+Top level modules:
+	keccak_round
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\hash\keccak_f1600_core.sv 
+-- Compiling module keccak_f1600_core
+
+Top level modules:
+	keccak_f1600_core
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\hash\keccak_sponge.sv 
+-- Compiling module keccak_sponge
+
+Top level modules:
+	keccak_sponge
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:05 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\random\fpga_ro_entropy.sv 
+-- Compiling module fpga_ro_entropy
+
+Top level modules:
+	fpga_ro_entropy
+End time: 09:00:05 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\random\entropy_health.sv 
+-- Compiling module entropy_health
+
+Top level modules:
+	entropy_health
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\random\shake256_drbg.sv 
+-- Compiling module shake256_drbg
+
+Top level modules:
+	shake256_drbg
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\random\mlkem_random_manager.sv 
+-- Compiling module mlkem_random_manager
+
+Top level modules:
+	mlkem_random_manager
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\codec\compress_decompress.sv 
+-- Compiling module compress_decompress
+
+Top level modules:
+	compress_decompress
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\codec\compress_seq.sv 
+-- Compiling module compress_seq
+
+Top level modules:
+	compress_seq
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\codec\byte_codec_core.sv 
+-- Compiling module byte_codec_core
+
+Top level modules:
+	byte_codec_core
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\sample\mlkem_sampler.sv 
+-- Compiling module mlkem_sampler
+
+Top level modules:
+	mlkem_sampler
+End time: 09:00:06 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:06 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\uart\uart_tx.sv 
+-- Compiling module uart_tx
+
+Top level modules:
+	uart_tx
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\uart\uart_rx.sv 
+-- Compiling module uart_rx
+
+Top level modules:
+	uart_rx
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\display\seg7_decode.sv 
+-- Compiling module seg7_decode
+
+Top level modules:
+	seg7_decode
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\top\clock_100.sv 
+-- Compiling module clock_100
+
+Top level modules:
+	clock_100
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\core\mlkem_service_core.sv 
+-- Compiling module mlkem_service_core
+
+Top level modules:
+	mlkem_service_core
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\uart\channel_kem_uart.sv 
+-- Compiling module channel_kem_uart
+
+Top level modules:
+	channel_kem_uart
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\aead\aes256_block.sv 
+-- Compiling module aes256_block
+
+Top level modules:
+	aes256_block
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:07 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\aead\ghash_mul.sv 
+-- Compiling module ghash_mul
+
+Top level modules:
+	ghash_mul
+End time: 09:00:07 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\aead\aes_gcm_core.sv 
+-- Compiling module aes_gcm_core
+
+Top level modules:
+	aes_gcm_core
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\aead\channel_kdf.sv 
+-- Compiling module channel_kdf
+
+Top level modules:
+	channel_kdf
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\aead\channel_session.sv 
+-- Compiling module channel_session
+
+Top level modules:
+	channel_session
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\uart\channel_record_uart.sv 
+-- Compiling module channel_record_uart
+
+Top level modules:
+	channel_record_uart
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\01_rtl\architectures\continuous_banked\rtl\top\mlkem_channel_top.sv 
+-- Compiling module mlkem_channel_top
+
+Top level modules:
+	mlkem_channel_top
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_mod_mul_pipeline.sv 
+-- Compiling module tb_mod_mul_pipeline
+
+Top level modules:
+	tb_mod_mul_pipeline
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_compress_seq.sv 
+-- Compiling module tb_compress_seq
+
+Top level modules:
+	tb_compress_seq
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_codec_sampler.sv 
+-- Compiling module tb_codec_sampler
+
+Top level modules:
+	tb_codec_sampler
+End time: 09:00:08 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:08 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_clock_uart_100.sv 
+-- Compiling module tb_clock_uart_100
+
+Top level modules:
+	tb_clock_uart_100
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\unit\tb_ntt_intt.sv 
+-- Compiling module tb_ntt_intt
+
+Top level modules:
+	tb_ntt_intt
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\architectures\continuous_banked\tb_ntt_banked_guards.sv 
+-- Compiling module tb_ntt_banked_guards
+
+Top level modules:
+	tb_ntt_banked_guards
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\unit\tb_multiply_ntts.sv 
+-- Compiling module tb_multiply_ntts
+
+Top level modules:
+	tb_multiply_ntts
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_keccak_sponge.sv 
+-- Compiling module tb_keccak_sponge
+
+Top level modules:
+	tb_keccak_sponge
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_keccak_sponge_clear.sv 
+-- Compiling module tb_keccak_sponge_clear
+
+Top level modules:
+	tb_keccak_sponge_clear
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\unit\tb_keccak_kat.sv 
+-- Compiling module tb_keccak_kat
+
+Top level modules:
+	tb_keccak_kat
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_random_subsystem.sv 
+-- Compiling module tb_random_subsystem
+
+Top level modules:
+	tb_random_subsystem
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_mlkem_service_core.sv 
+-- Compiling module tb_mlkem_service_core
+
+Top level modules:
+	tb_mlkem_service_core
+End time: 09:00:09 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:09 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_channel_crypto.sv 
+-- Compiling module tb_channel_crypto
+
+Top level modules:
+	tb_channel_crypto
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\architectures\continuous_banked\tb_opt100_memory_guards.sv 
+-- Compiling module tb_opt100_memory_guards
+
+Top level modules:
+	tb_opt100_memory_guards
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\architectures\continuous_banked\tb_channel_pipeline_guards.sv 
+-- Compiling module tb_channel_pipeline_guards
+
+Top level modules:
+	tb_channel_pipeline_guards
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_channel_record.sv 
+-- Compiling module tb_channel_record
+
+Top level modules:
+	tb_channel_record
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_channel_top.sv 
+-- Compiling module tb_channel_top
+
+Top level modules:
+	tb_channel_top
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\full\tb_channel_kem_reset_timeout.sv 
+-- Compiling module tb_channel_kem_reset_timeout
+
+Top level modules:
+	tb_channel_kem_reset_timeout
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 09:00:10 on Oct 25,2026
+vlog -sv "+define+CONTINUOUS_BANKED_FAST_FRONTEND" -work D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work D:\ML_KEM_768_1024\02_tb\architectures\continuous_banked\tb_sampler_busy_contract.sv 
+-- Compiling module tb_sampler_busy_contract
+
+Top level modules:
+	tb_sampler_busy_contract
+End time: 09:00:10 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

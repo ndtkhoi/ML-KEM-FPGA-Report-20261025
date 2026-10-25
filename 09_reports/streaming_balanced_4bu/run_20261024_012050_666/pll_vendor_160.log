@@ -1,0 +1,35 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_work -L altera_lnsim_ver -L altera_mf_ver -L cyclonev_ver -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_160.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_4bu\run_20261024_012050_666\pll_vendor_160.transcript.log tb_clock_uart_100 -do "run -all; quit -f" -gCLOCK_MHZ=160 
+# Start time: 01:21:19 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_work.tb_clock_uart_100
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_work.clock_100
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.altera_pll
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_work.uart_tx
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_4bu\run_20261024_012050_666\pll_work.uart_rx
+# Loading altera_lnsim_ver.dps_extra_kick
+# Loading altera_lnsim_ver.dprio_init
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# run -all
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (tb_clock_uart_100.dut.u_pll.new_model.gpll.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = tb_clock_uart_100.dut.u_pll.new_model.gpll.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 MHz
+# Info: output_clock_frequency = 160 MHZ
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 3125.000000
+# Info: output_clock_low_period = 3125.000000
+# CLOCK_UART: ALL TESTS PASS ref=50MHz core=160MHz cycles_per_bit=1389 measured_bit_ns=8681.250 average_period_ns=6.250000 115200_8N1 reset_relock
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_clock_uart_100.sv(65)
+#    Time: 444416875 ps  Iteration: 2  Instance: /tb_clock_uart_100
+# End time: 01:21:21 on Oct 24,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

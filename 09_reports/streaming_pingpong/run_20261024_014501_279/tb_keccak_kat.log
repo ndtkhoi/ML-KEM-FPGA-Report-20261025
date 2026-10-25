@@ -1,0 +1,21 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_keccak_kat.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_keccak_kat.transcript.log tb_keccak_kat -do "run -all; quit -f" 
+# Start time: 01:46:21 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_keccak_kat
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round
+# run -all
+# SHA3_256_EMPTY_KAT: checked cycles=48
+# SHA3_512_EMPTY_KAT: checked cycles=48
+# SHAKE128_EMPTY_KAT: checked cycles=48
+# SHAKE256_EMPTY_KAT: checked cycles=48
+# KECCAK_SHA3_SHAKE_KAT: PASS tests=4
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/unit/tb_keccak_kat.sv(226)
+#    Time: 3169 ns  Iteration: 0  Instance: /tb_keccak_kat
+# End time: 01:46:22 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

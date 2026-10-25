@@ -1,0 +1,64 @@
+code,mode,operation,cycles,nominal_latency_us_at_160mhz,raw_log,workbook_row
+A0,256 hệ số,NTT,9984,62.4,09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log,20
+A0,256 hệ số,INTT,12800,80,09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log,21
+A0,256 hệ số,MultiplyNTTs,2433,15.20625,09_reports/iterative_baseline/run_20261023_233228_764/tb_multiply_ntts.log,22
+A0,768,KeyGen,207580,1297.375,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,23
+A0,768,Encaps,263538,1647.1125,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,24
+A0,768,Decaps,362654,2266.5875,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,25
+A0,1024,KeyGen,319198,1994.9875,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,26
+A0,1024,Encaps,386366,2414.7875,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,27
+A0,1024,Decaps,512312,3201.95,09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log,28
+A1,256 hệ số,NTT,981,6.13125,09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log,29
+A1,256 hệ số,INTT,981,6.13125,09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log,30
+A1,256 hệ số,MultiplyNTTs,145,0.90625,09_reports/streaming_pingpong/run_20261024_014501_279/tb_multiply_ntts.log,31
+A1,768,KeyGen,132970,831.0625,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,32
+A1,768,Encaps,161797,1011.23125,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,33
+A1,768,Decaps,215221,1345.13125,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,34
+A1,1024,KeyGen,210566,1316.0375,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,35
+A1,1024,Encaps,245499,1534.36875,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,36
+A1,1024,Decaps,314462,1965.3875,09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log,37
+A2,256 hệ số,NTT,905,5.65625,09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log,38
+A2,256 hệ số,INTT,905,5.65625,09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log,39
+A2,256 hệ số,MultiplyNTTs,143,0.89375,09_reports/continuous_banked/run_20261025_085959_024/tb_multiply_ntts.log,40
+A2,768,KeyGen,80864,505.4,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,41
+A2,768,Encaps,106355,664.71875,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,42
+A2,768,Decaps,149594,934.9625,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,43
+A2,1024,KeyGen,127047,794.04375,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,44
+A2,1024,Encaps,158223,988.89375,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,45
+A2,1024,Decaps,213792,1336.2,09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log,46
+A4,256 hệ số,NTT,906,5.6625,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log,56
+A4,256 hệ số,INTT,906,5.6625,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log,57
+A4,256 hệ số,MultiplyNTTs,143,0.89375,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_multiply_ntts.log,58
+A4,768,KeyGen,74911,468.19375,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,59
+A4,768,Encaps,99061,619.13125,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,60
+A4,768,Decaps,137891,861.81875,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,61
+A4,1024,KeyGen,117985,737.40625,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,62
+A4,1024,Encaps,147564,922.275,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,63
+A4,1024,Decaps,197125,1232.03125,09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log,64
+A5,256 hệ số,NTT,235,1.46875,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log,65
+A5,256 hệ số,INTT,235,1.46875,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log,66
+A5,256 hệ số,MultiplyNTTs,143,0.89375,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_multiply_ntts.log,67
+A5,768,KeyGen,70885,443.03125,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,68
+A5,768,Encaps,94364,589.775,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,69
+A5,768,Decaps,130510,815.6875,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,70
+A5,1024,KeyGen,112617,703.85625,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,71
+A5,1024,Encaps,141525,884.53125,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,72
+A5,1024,Decaps,187731,1173.31875,09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log,73
+SB2,256 hệ số,NTT,459,2.86875,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log,74
+SB2,256 hệ số,INTT,459,2.86875,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log,75
+SB2,256 hệ số,MultiplyNTTs,143,0.89375,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_multiply_ntts.log,76
+SB2,768,KeyGen,72229,451.43125,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,77
+SB2,768,Encaps,95932,599.575,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,78
+SB2,768,Decaps,132974,831.0875,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,79
+SB2,1024,KeyGen,114409,715.05625,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,80
+SB2,1024,Encaps,143541,897.13125,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,81
+SB2,1024,Decaps,190867,1192.91875,09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log,82
+SB8,256 hệ số,NTT,127,0.79375,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log,83
+SB8,256 hệ số,INTT,127,0.79375,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log,84
+SB8,256 hệ số,MultiplyNTTs,143,0.89375,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_multiply_ntts.log,85
+SB8,768,KeyGen,70237,438.98125,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,86
+SB8,768,Encaps,93608,585.05,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,87
+SB8,768,Decaps,129322,808.2625,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,88
+SB8,1024,KeyGen,111753,698.45625,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,89
+SB8,1024,Encaps,140553,878.45625,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,90
+SB8,1024,Decaps,186219,1163.86875,09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log,91

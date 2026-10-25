@@ -1,0 +1,15 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work -wlf D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\tb_mod_mul_pipeline.wlf -l D:\ML_KEM_768_1024\09_reports\iterative_baseline\run_20261023_233228_764\tb_mod_mul_pipeline.transcript.log tb_mod_mul_pipeline -do "run -all; quit -f" 
+# Start time: 23:32:45 on Oct 23,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.tb_mod_mul_pipeline
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.mod_mul_pipe
+# run -all
+# MOD_MUL_PIPELINE: ALL TESTS PASS checked=86742 boundary=49152 random_bubbles resets=3 latency=6 throughput=1
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_mod_mul_pipeline.sv(60)
+#    Time: 661153878 ps  Iteration: 1  Instance: /tb_mod_mul_pipeline
+# End time: 23:32:46 on Oct 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

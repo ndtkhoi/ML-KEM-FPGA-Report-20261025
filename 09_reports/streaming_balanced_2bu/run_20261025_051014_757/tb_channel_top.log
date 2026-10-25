@@ -1,0 +1,56 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\tb_channel_top.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_2bu\run_20261025_051014_757\tb_channel_top.transcript.log tb_channel_top -do "run -all; quit -f" 
+# Start time: 05:16:51 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.tb_channel_top
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_channel_top
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.clock_100
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.uart_rx
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.uart_tx
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.fpga_ro_entropy
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.entropy_health
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_random_manager
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.shake256_drbg
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.channel_kem_uart
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_service_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mlkem_sampler
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.ntt_core_stream2
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.gammas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.compress_seq
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.channel_record_uart
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.channel_session
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.channel_kdf
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.ghash_mul
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.seg7_decode
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.poly_bank_64_sdp
+# run -all
+# CHANNEL_TOP op=K error=00 LEDR=0000000101
+# CHANNEL_TOP op=D error=00 LEDR=0000000101
+# CHANNEL_TOP op=S error=00 LEDR=0000010101
+# CHANNEL_TOP op=U error=a1 LEDR=0000010110
+# CHANNEL_TOP op=U error=00 LEDR=0000110101
+# CHANNEL_TOP op=U error=a2 LEDR=0001110110
+# CHANNEL_TOP op=P error=00 LEDR=0001110101
+# CHANNEL_TOP op=Z error=00 LEDR=0001100001
+# CHANNEL_TOP op=P error=a0 LEDR=0001100010
+# CHANNEL_TOP: ALL TESTS PASS serial_pins MLKEM_KeyGen_Decaps HKDF AES_GCM tamper replay LED HEX zeroize
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_2bu/tb_channel_top.sv(115)
+#    Time: 3521706250 ps  Iteration: 1  Instance: /tb_channel_top
+# End time: 05:18:54 on Oct 25,2026, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 0

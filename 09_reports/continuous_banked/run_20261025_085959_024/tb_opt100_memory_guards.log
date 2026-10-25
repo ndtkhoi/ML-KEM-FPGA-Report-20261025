@@ -1,0 +1,24 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\tb_opt100_memory_guards.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked\run_20261025_085959_024\tb_opt100_memory_guards.transcript.log tb_opt100_memory_guards -do "run -all; quit -f" 
+# Start time: 09:04:44 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.tb_opt100_memory_guards
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.ghash_mul
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked\run_20261025_085959_024\work.mlkem_sampler
+# ** Warning: (vsim-3017) D:/ML_KEM_768_1024/02_tb/architectures/continuous_banked/tb_opt100_memory_guards.sv(14): [TFMPC] - Too few port connections. Expected 22, found 21.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_opt100_memory_guards/dut File: D:/ML_KEM_768_1024/01_rtl/architectures/continuous_banked/rtl/aead/aes_gcm_core.sv
+# ** Warning: (vsim-3722) D:/ML_KEM_768_1024/02_tb/architectures/continuous_banked/tb_opt100_memory_guards.sv(14): [TFMPC] - Missing connection for port 'authenticated_read_data'.
+# run -all
+# GCM_RAM_GUARDS: PASS max_payload tag_first_last constant_cycles=2797 wipe256 busy_load latched_inputs
+# GCM_RAM_GUARDS: PASS short_after_long reset zeroize_during_payload invalid_lengths
+# SAMPLER_RAM_GUARDS: PASS reject_all q_boundary both_terminal_candidates CBD_signed last_byte caller_no_busy_write
+# OPT100_MEMORY_GUARDS: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/continuous_banked/tb_opt100_memory_guards.sv(174)
+#    Time: 179730 ns  Iteration: 1  Instance: /tb_opt100_memory_guards
+# End time: 09:04:45 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

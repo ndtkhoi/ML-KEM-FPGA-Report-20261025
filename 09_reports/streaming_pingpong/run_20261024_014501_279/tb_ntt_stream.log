@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_ntt_stream.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_ntt_stream.transcript.log tb_ntt_stream -do "run -all; quit -f" 
+# Start time: 01:45:45 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_ntt_stream
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.gammas_rom
+# run -all
+# NTT_STREAM: ALL TESTS PASS transforms=104 multiply_runs=12 schoolbook_convolutions=8 reset_aborts=12 stages=738 ntt_cycles=981 intt_cycles=981 mul_cycles=145 II=1
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/unit/tb_ntt_stream.sv(250)
+#    Time: 1079156407 ps  Iteration: 0  Instance: /tb_ntt_stream
+# End time: 01:46:01 on Oct 24,2026, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0

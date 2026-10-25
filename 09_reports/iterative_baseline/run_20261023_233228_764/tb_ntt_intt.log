@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work -wlf D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\tb_ntt_intt.wlf -l D:\ML_KEM_768_1024\09_reports\iterative_baseline\run_20261023_233228_764\tb_ntt_intt.transcript.log tb_ntt_intt -do "run -all; quit -f" 
+# Start time: 23:32:52 on Oct 23,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.tb_ntt_intt
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\iterative_baseline\run_20261023_233228_764\work.poly_ram_dp
+# run -all
+# NTT_FIPS203_ALG9: PASS coefficients=256 cycles=9984
+# INTT_FIPS203_ALG10: PASS coefficients=256 cycles=12800
+# NTT_INTT_ROUND_TRIP: PASS ntt_cycles=9984 intt_cycles=12800
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/unit/tb_ntt_intt.sv(195)
+#    Time: 238176 ns  Iteration: 0  Instance: /tb_ntt_intt
+# End time: 23:32:53 on Oct 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\tb_ntt_intt.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked_cycle_opt_v2\run_20261024_060413_427\tb_ntt_intt.transcript.log tb_ntt_intt -do "run -all; quit -f" 
+# Start time: 06:04:54 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.tb_ntt_intt
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.ntt_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.poly_bank_128_sdp
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt_v2\run_20261024_060413_427\work.mod_mul_pipe
+# run -all
+# NTT_FIPS203_ALG9: PASS coefficients=256 cycles=906
+# INTT_FIPS203_ALG10: PASS coefficients=256 cycles=906
+# NTT_INTT_ROUND_TRIP: PASS ntt_cycles=906 intt_cycles=906
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/unit/tb_ntt_intt.sv(195)
+#    Time: 28456 ns  Iteration: 0  Instance: /tb_ntt_intt
+# End time: 06:04:55 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,23 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\tb_ntt_banked_guards.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_8bu\run_20261025_051014_919\tb_ntt_banked_guards.transcript.log tb_ntt_banked_guards -do "run -all; quit -f" 
+# Start time: 05:11:07 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.tb_ntt_banked_guards
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.ntt_core_stream8
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.multiply_ntts_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.mod_mul_pipe
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.gammas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.poly_bank_16_sdp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.mod_sub
+# run -all
+# NTT_BANKED_GUARDS: ALL TESTS PASS transforms=104 multiply_runs=12 schoolbook_convolutions=8 reset_aborts=12 stages=747 ntt_intt_cycles=127 mul_cycles=143 butterflies_per_issue=8
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_8bu/tb_ntt_banked_guards.sv(288)
+#    Time: 655985395 ps  Iteration: 0  Instance: /tb_ntt_banked_guards
+# End time: 05:11:39 on Oct 25,2026, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 0

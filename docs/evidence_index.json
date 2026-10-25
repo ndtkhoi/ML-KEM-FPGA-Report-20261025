@@ -1,0 +1,3135 @@
+{
+  "report_snapshot_date": "2026-10-25",
+  "scope": "Full DE10-Standard system on Cyclone V 5CSXFC6D6F31C6; RTL cycle counts exclude UART transmission. Only active architecture selections are included.",
+  "tracker": "docs/ML_KEM_Theo_doi_kien_truc.xlsx",
+  "architectures": {
+    "A0": {
+      "name": "Iterative in-place",
+      "compile_run": "A0_20261024_000741",
+      "regression_run": "A0_SIM_20261023_233228_764",
+      "alm": 24673,
+      "dsp": 28,
+      "m10k": 43,
+      "registers": 35940,
+      "setup_slack_min_ns": 0.02,
+      "hold_slack_min_ns": 0.145,
+      "timing_status": "PASS 4 corners",
+      "regression_status": "PASS",
+      "note": "Đạt STA 160 MHz; setup 0.02 ns / hold 0.145 ns. 33/33 RTL khớp regression.",
+      "seed": 2,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/A0_20261024_000741",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_channel_160.sdc",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.rpt",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.summary",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.flow.rpt",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.qsf",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.rpt",
+        "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/iterative_baseline/run_20261023_233228_764",
+      "raw_regression_files": [
+        "09_reports/iterative_baseline/run_20261023_233228_764/compile.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/generate_full_vectors.py.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/generate_service_vectors.py.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/inputs.json",
+        "09_reports/iterative_baseline/run_20261023_233228_764/summary.txt",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_crypto.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_record.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_top.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_clock_uart_100.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_codec_sampler.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_compress_seq.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_kat.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge_clear.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_mod_mul_pipeline.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_multiply_ntts.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/tb_random_subsystem.log",
+        "09_reports/iterative_baseline/run_20261023_233228_764/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": 0.02,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.266,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 160.51,
+          "status": "PASS theo SDC",
+          "workbook_row": 6,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": 0.146,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.241,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 163.83,
+          "status": "PASS theo SDC",
+          "workbook_row": 7,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.219,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.166,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 8,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.708,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.145,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 9,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A6:L6",
+        "compile": "Compile!A6:AO6"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 9984,
+          "nominal_latency_us_at_160mhz": 62.4,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log",
+          "workbook_row": 20,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 12800,
+          "nominal_latency_us_at_160mhz": 80,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log",
+          "workbook_row": 21,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 2433,
+          "nominal_latency_us_at_160mhz": 15.20625,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_multiply_ntts.log",
+          "workbook_row": 22,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 207580,
+          "nominal_latency_us_at_160mhz": 1297.375,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 23,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 263538,
+          "nominal_latency_us_at_160mhz": 1647.1125,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 24,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 362654,
+          "nominal_latency_us_at_160mhz": 2266.5875,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 25,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 319198,
+          "nominal_latency_us_at_160mhz": 1994.9875,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 26,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 386366,
+          "nominal_latency_us_at_160mhz": 2414.7875,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 27,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 512312,
+          "nominal_latency_us_at_160mhz": 3201.95,
+          "raw_log": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+          "workbook_row": 28,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "A1": {
+      "name": "Streaming ping-pong",
+      "compile_run": "A1_20261024_075119",
+      "regression_run": "A1_SIM_20261024_014501_279",
+      "alm": 24882,
+      "dsp": 28,
+      "m10k": 44,
+      "registers": 36341,
+      "setup_slack_min_ns": 0.075,
+      "hold_slack_min_ns": 0.11,
+      "timing_status": "PASS 4 corners",
+      "regression_status": "PASS",
+      "note": "Đạt STA 160 MHz; setup 0.075 ns / hold 0.11 ns. 33/33 RTL khớp regression.",
+      "seed": 2,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/A1_20261024_075119",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.rpt",
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.summary",
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.flow.rpt",
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.qsf",
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.rpt",
+        "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/streaming_pingpong/run_20261024_014501_279",
+      "raw_regression_files": [
+        "09_reports/streaming_pingpong/run_20261024_014501_279/channel_demo.py.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/clear_preview.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/compile.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/generate_channel_vectors.py.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/generate_full_vectors.py.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/generate_service_vectors.py.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/inputs.json",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/pll_compile.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_100.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_110.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_150.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_160.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/summary.txt",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_crypto.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_pipeline_guards.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_record.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_top.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_clock_uart_100.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_reduction_guard.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_sampler.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_compress_seq.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_kat.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge_clear.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mod_mul_pipeline.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_multiply_ntts.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_stream.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_opt100_memory_guards.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/tb_random_subsystem.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/test_channel_host.py.log",
+        "09_reports/streaming_pingpong/run_20261024_014501_279/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": 0.075,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.235,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 161.94,
+          "status": "PASS theo SDC",
+          "workbook_row": 30,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": 0.2,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.182,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 165.29,
+          "status": "PASS theo SDC",
+          "workbook_row": 31,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.348,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.162,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 32,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.691,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.11,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 33,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A7:L7",
+        "compile": "Compile!A12:AO12"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 981,
+          "nominal_latency_us_at_160mhz": 6.13125,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log",
+          "workbook_row": 29,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 981,
+          "nominal_latency_us_at_160mhz": 6.13125,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log",
+          "workbook_row": 30,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 145,
+          "nominal_latency_us_at_160mhz": 0.90625,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_multiply_ntts.log",
+          "workbook_row": 31,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 132970,
+          "nominal_latency_us_at_160mhz": 831.0625,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 32,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 161797,
+          "nominal_latency_us_at_160mhz": 1011.23125,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 33,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 215221,
+          "nominal_latency_us_at_160mhz": 1345.13125,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 34,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 210566,
+          "nominal_latency_us_at_160mhz": 1316.0375,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 35,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 245499,
+          "nominal_latency_us_at_160mhz": 1534.36875,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 36,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 314462,
+          "nominal_latency_us_at_160mhz": 1965.3875,
+          "raw_log": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+          "workbook_row": 37,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "A2": {
+      "name": "Continuous banked",
+      "compile_run": "A2_20261025_094051",
+      "regression_run": "A2_SIM_20261025_085959_024",
+      "alm": 27857,
+      "dsp": 28,
+      "m10k": 45,
+      "registers": 38228,
+      "setup_slack_min_ns": -0.051,
+      "hold_slack_min_ns": 0.121,
+      "timing_status": "Cần xử lý",
+      "regression_status": "PASS",
+      "note": "Chốt A2, giữ RTL theo yêu cầu. Setup min −0,051 ns (Slow 0°C), TNS −0,092 ns; Slow 85°C +0,007 ns. Hold min +0,121 ns. Chưa đạt timing đầy đủ tại 160 MHz.",
+      "seed": 2,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/A2_20261025_094051",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_channel_160.sdc",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.rpt",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.summary",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.flow.rpt",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.qsf",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.rpt",
+        "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.summary",
+        "09_reports/architecture_tracking/A2_20261025_094051/rtl_sources_sha256.json"
+      ],
+      "raw_regression_directory": "09_reports/continuous_banked/run_20261025_085959_024",
+      "raw_regression_files": [
+        "09_reports/continuous_banked/run_20261025_085959_024/channel_demo.py.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/compile.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/generate_channel_vectors.py.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/generate_full_vectors.py.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/generate_service_vectors.py.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/inputs.json",
+        "09_reports/continuous_banked/run_20261025_085959_024/pll_compile.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_100.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_110.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_150.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_160.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/sampler_busy_contract.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/summary.txt",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_crypto.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_kem_reset_timeout.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_pipeline_guards.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_record.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_top.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_clock_uart_100.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_codec_sampler.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_compress_seq.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_kat.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge_clear.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_mod_mul_pipeline.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_multiply_ntts.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_banked_guards.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_opt100_memory_guards.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/tb_random_subsystem.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/test_channel_host.py.log",
+        "09_reports/continuous_banked/run_20261025_085959_024/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": 0.007,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.214,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 160.18,
+          "status": "PASS theo SDC",
+          "workbook_row": 86,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": -0.051,
+          "setup_tns_ns": -0.092,
+          "hold_slack_ns": 0.196,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 158.7,
+          "status": "Cần xử lý",
+          "workbook_row": 87,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.343,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.133,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 88,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.767,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.121,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 89,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A8:L8",
+        "compile": "Compile!A26:AO26"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 905,
+          "nominal_latency_us_at_160mhz": 5.65625,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log",
+          "workbook_row": 38,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 905,
+          "nominal_latency_us_at_160mhz": 5.65625,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log",
+          "workbook_row": 39,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 143,
+          "nominal_latency_us_at_160mhz": 0.89375,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_multiply_ntts.log",
+          "workbook_row": 40,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 80864,
+          "nominal_latency_us_at_160mhz": 505.4,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 41,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 106355,
+          "nominal_latency_us_at_160mhz": 664.71875,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 42,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 149594,
+          "nominal_latency_us_at_160mhz": 934.9625,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 43,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 127047,
+          "nominal_latency_us_at_160mhz": 794.04375,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 44,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 158223,
+          "nominal_latency_us_at_160mhz": 988.89375,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 45,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 213792,
+          "nominal_latency_us_at_160mhz": 1336.2,
+          "raw_log": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+          "workbook_row": 46,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "A4": {
+      "name": "Banked cycle-opt (giữ V2)",
+      "compile_run": "A4_20261025_055016",
+      "regression_run": "A4_SIM_20261025_060635_998",
+      "alm": 28952,
+      "dsp": 28,
+      "m10k": 45,
+      "registers": 38307,
+      "setup_slack_min_ns": 0.006,
+      "hold_slack_min_ns": 0.127,
+      "timing_status": "PASS 4 corners",
+      "regression_status": "PASS",
+      "note": "Đạt 160 MHz. Giữ mã A4; tên project mới bỏ v2. Setup +0,006 ns nên biên nhỏ.",
+      "seed": 4,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.rpt",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.summary",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.flow.rpt",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qpf",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qsf",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.rpt",
+        "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998",
+      "raw_regression_files": [
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/channel_demo.py.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/compile.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_channel_vectors.py.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_full_vectors.py.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_service_vectors.py.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/inputs.json",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_compile.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_100.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_110.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_150.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_160.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/sampler_busy_contract.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/summary.txt",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_crypto.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_kem_reset_timeout.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_pipeline_guards.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_record.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_top.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_clock_uart_100.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_codec_sampler.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_compress_seq.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_kat.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge_clear.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mlkem_service_core.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mod_mul_pipeline.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_multiply_ntts.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_banked_guards.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_intt.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_opt100_memory_guards.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_random_subsystem.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/test_channel_host.py.log",
+        "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": 0.006,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.286,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 160.15,
+          "status": "PASS theo SDC",
+          "workbook_row": 62,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": 0.18,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.213,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 164.74,
+          "status": "PASS theo SDC",
+          "workbook_row": 63,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 1.907,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.138,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 64,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.432,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.127,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 65,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A10:L10",
+        "compile": "Compile!A20:AO20"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 906,
+          "nominal_latency_us_at_160mhz": 5.6625,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log",
+          "workbook_row": 56,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 906,
+          "nominal_latency_us_at_160mhz": 5.6625,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log",
+          "workbook_row": 57,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 143,
+          "nominal_latency_us_at_160mhz": 0.89375,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_multiply_ntts.log",
+          "workbook_row": 58,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 74911,
+          "nominal_latency_us_at_160mhz": 468.19375,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 59,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 99061,
+          "nominal_latency_us_at_160mhz": 619.13125,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 60,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 137891,
+          "nominal_latency_us_at_160mhz": 861.81875,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 61,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 117985,
+          "nominal_latency_us_at_160mhz": 737.40625,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 62,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 147564,
+          "nominal_latency_us_at_160mhz": 922.275,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 63,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 197125,
+          "nominal_latency_us_at_160mhz": 1232.03125,
+          "raw_log": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+          "workbook_row": 64,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "A5": {
+      "name": "Streaming-Balanced 4BU",
+      "compile_run": "A5_20261024_063318",
+      "regression_run": "A5_SIM_20261024_012050_666",
+      "alm": 27176,
+      "dsp": 40,
+      "m10k": 55,
+      "registers": 37911,
+      "setup_slack_min_ns": 0.091,
+      "hold_slack_min_ns": 0.116,
+      "timing_status": "PASS 4 corners",
+      "regression_status": "PASS",
+      "note": "Cân bằng tốt nhất trong 2/4/8BU hiện tại: đạt 160 MHz, 40 DSP / 55 M10K. Xem So_sanh_BU.",
+      "seed": 4,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/A5_20261024_063318",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/A5_20261024_063318/bu_tracker_evidence.json",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_channel_160.sdc",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.rpt",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.summary",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.flow.rpt",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qpf",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qsf",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.rpt",
+        "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/streaming_balanced_4bu/run_20261024_012050_666",
+      "raw_regression_files": [
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/channel_demo.py.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/compile.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_channel_vectors.py.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_full_vectors.py.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_service_vectors.py.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/inputs.json",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_compile.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_100.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_110.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_150.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_160.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/sampler_busy_contract.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/summary.txt",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_crypto.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_pipeline_guards.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_record.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_top.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_clock_uart_100.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_codec_sampler.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_compress_seq.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_kat.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge_clear.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mod_mul_pipeline.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_multiply_ntts.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_banked_guards.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_opt100_memory_guards.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_random_subsystem.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/test_channel_host.py.log",
+        "09_reports/streaming_balanced_4bu/run_20261024_012050_666/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": 0.091,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.253,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 162.36,
+          "status": "PASS theo SDC",
+          "workbook_row": 26,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": 0.235,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.188,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 166.25,
+          "status": "PASS theo SDC",
+          "workbook_row": 27,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.143,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.131,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 28,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.625,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.116,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 29,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A11:L11",
+        "compile": "Compile!A11:AO11"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 235,
+          "nominal_latency_us_at_160mhz": 1.46875,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log",
+          "workbook_row": 65,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 235,
+          "nominal_latency_us_at_160mhz": 1.46875,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log",
+          "workbook_row": 66,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 143,
+          "nominal_latency_us_at_160mhz": 0.89375,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_multiply_ntts.log",
+          "workbook_row": 67,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 70885,
+          "nominal_latency_us_at_160mhz": 443.03125,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 68,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 94364,
+          "nominal_latency_us_at_160mhz": 589.775,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 69,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 130510,
+          "nominal_latency_us_at_160mhz": 815.6875,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 70,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 112617,
+          "nominal_latency_us_at_160mhz": 703.85625,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 71,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 141525,
+          "nominal_latency_us_at_160mhz": 884.53125,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 72,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 187731,
+          "nominal_latency_us_at_160mhz": 1173.31875,
+          "raw_log": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+          "workbook_row": 73,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "SB2": {
+      "name": "Streaming-Balanced 2BU / 4 bank",
+      "compile_run": "SB2_20261025_063232",
+      "regression_run": "SB2_SIM_20261025_051014_757",
+      "alm": 27017,
+      "dsp": 32,
+      "m10k": 49,
+      "registers": 37370,
+      "setup_slack_min_ns": -0.194,
+      "hold_slack_min_ns": 0.063,
+      "timing_status": "Cần xử lý",
+      "regression_status": "PASS",
+      "note": "Tiết kiệm DSP/RAM; NTT 459 chu kỳ. Setup −0,194 ns, chưa đạt 160 MHz.",
+      "seed": 4,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/SB2_20261025_063232",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/SB2_20261025_063232/bu_tracker_evidence.json",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_channel_160.sdc",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.rpt",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.summary",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.flow.rpt",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qpf",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qsf",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.rpt",
+        "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/streaming_balanced_2bu/run_20261025_051014_757",
+      "raw_regression_files": [
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/channel_demo.py.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/compile.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_channel_vectors.py.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_full_vectors.py.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_service_vectors.py.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/inputs.json",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_compile.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_100.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_110.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_150.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_160.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/sampler_busy_contract.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/summary.txt",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_crypto.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_pipeline_guards.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_record.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_top.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_clock_uart_100.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_codec_sampler.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_compress_seq.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_kat.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge_clear.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mod_mul_pipeline.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_multiply_ntts.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_banked_guards.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_opt100_memory_guards.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_random_subsystem.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/test_channel_host.py.log",
+        "09_reports/streaming_balanced_2bu/run_20261025_051014_757/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": -0.194,
+          "setup_tns_ns": -4.761,
+          "hold_slack_ns": 0.208,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 155.18,
+          "status": "Cần xử lý",
+          "workbook_row": 66,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": 0.073,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.09,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 161.89,
+          "status": "PASS theo SDC",
+          "workbook_row": 67,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.094,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.129,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 68,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.604,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.063,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 69,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A14:L14",
+        "compile": "Compile!A21:AO21"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 459,
+          "nominal_latency_us_at_160mhz": 2.86875,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log",
+          "workbook_row": 74,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 459,
+          "nominal_latency_us_at_160mhz": 2.86875,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log",
+          "workbook_row": 75,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 143,
+          "nominal_latency_us_at_160mhz": 0.89375,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_multiply_ntts.log",
+          "workbook_row": 76,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 72229,
+          "nominal_latency_us_at_160mhz": 451.43125,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 77,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 95932,
+          "nominal_latency_us_at_160mhz": 599.575,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 78,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 132974,
+          "nominal_latency_us_at_160mhz": 831.0875,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 79,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 114409,
+          "nominal_latency_us_at_160mhz": 715.05625,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 80,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 143541,
+          "nominal_latency_us_at_160mhz": 897.13125,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 81,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 190867,
+          "nominal_latency_us_at_160mhz": 1192.91875,
+          "raw_log": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+          "workbook_row": 82,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    },
+    "SB8": {
+      "name": "Streaming-Balanced 8BU / 16 bank",
+      "compile_run": "SB8_20261025_063630",
+      "regression_run": "SB8_SIM_20261025_051014_919",
+      "alm": 28480,
+      "dsp": 56,
+      "m10k": 66,
+      "registers": 38283,
+      "setup_slack_min_ns": -0.512,
+      "hold_slack_min_ns": 0.102,
+      "timing_status": "Cần xử lý",
+      "regression_status": "PASS",
+      "note": "NTT 127 chu kỳ, DSP 56 / M10K 66. Setup −0,512 ns, chưa đạt 160 MHz.",
+      "seed": 4,
+      "target_clock_mhz": 160,
+      "raw_compile_directory": "09_reports/architecture_tracking/SB8_20261025_063630",
+      "raw_compile_files": [
+        "09_reports/architecture_tracking/SB8_20261025_063630/bu_tracker_evidence.json",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_channel_160.sdc",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.rpt",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.summary",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.flow.rpt",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qpf",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qsf",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.rpt",
+        "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.summary"
+      ],
+      "raw_regression_directory": "09_reports/streaming_balanced_8bu/run_20261025_051014_919",
+      "raw_regression_files": [
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/channel_demo.py.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/compile.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_channel_vectors.py.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_full_vectors.py.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_service_vectors.py.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/inputs.json",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_compile.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_100.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_110.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_150.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_160.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/sampler_busy_contract.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/summary.txt",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_crypto.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_pipeline_guards.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_record.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_top.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_clock_uart_100.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_codec_sampler.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_compress_seq.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_kat.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge_clear.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mod_mul_pipeline.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_multiply_ntts.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_banked_guards.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_opt100_memory_guards.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_random_subsystem.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/test_channel_host.py.log",
+        "09_reports/streaming_balanced_8bu/run_20261025_051014_919/validate_mlkem_acvp.py.log"
+      ],
+      "timing_corners": [
+        {
+          "corner": "Slow 1100mV 85C",
+          "setup_slack_ns": -0.512,
+          "setup_tns_ns": -7.037,
+          "hold_slack_ns": 0.244,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 147.89,
+          "status": "Cần xử lý",
+          "workbook_row": 70,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Slow 1100mV 0C",
+          "setup_slack_ns": -0.498,
+          "setup_tns_ns": -2.656,
+          "hold_slack_ns": 0.106,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": 148.19,
+          "status": "Cần xử lý",
+          "workbook_row": 71,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 85C",
+          "setup_slack_ns": 2.02,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.157,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 72,
+          "raw_slack_values_verified": true
+        },
+        {
+          "corner": "Fast 1100mV 0C",
+          "setup_slack_ns": 2.525,
+          "setup_tns_ns": 0,
+          "hold_slack_ns": 0.102,
+          "hold_tns_ns": 0,
+          "minimum_pulse_width_slack_ns": 1.562,
+          "fmax_mhz": null,
+          "status": "PASS theo SDC",
+          "workbook_row": 73,
+          "raw_slack_values_verified": true
+        }
+      ],
+      "workbook_cells": {
+        "overview": "Tong_hop!A15:L15",
+        "compile": "Compile!A22:AO22"
+      },
+      "operations": [
+        {
+          "mode": "256 hệ số",
+          "operation": "NTT",
+          "cycles": 127,
+          "nominal_latency_us_at_160mhz": 0.79375,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log",
+          "workbook_row": 83,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "INTT",
+          "cycles": 127,
+          "nominal_latency_us_at_160mhz": 0.79375,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log",
+          "workbook_row": 84,
+          "raw_value_verified": true
+        },
+        {
+          "mode": "256 hệ số",
+          "operation": "MultiplyNTTs",
+          "cycles": 143,
+          "nominal_latency_us_at_160mhz": 0.89375,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_multiply_ntts.log",
+          "workbook_row": 85,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "KeyGen",
+          "cycles": 70237,
+          "nominal_latency_us_at_160mhz": 438.98125,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 86,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Encaps",
+          "cycles": 93608,
+          "nominal_latency_us_at_160mhz": 585.05,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 87,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 768,
+          "operation": "Decaps",
+          "cycles": 129322,
+          "nominal_latency_us_at_160mhz": 808.2625,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 88,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "KeyGen",
+          "cycles": 111753,
+          "nominal_latency_us_at_160mhz": 698.45625,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 89,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Encaps",
+          "cycles": 140553,
+          "nominal_latency_us_at_160mhz": 878.45625,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 90,
+          "raw_value_verified": true
+        },
+        {
+          "mode": 1024,
+          "operation": "Decaps",
+          "cycles": 186219,
+          "nominal_latency_us_at_160mhz": 1163.86875,
+          "raw_log": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+          "workbook_row": 91,
+          "raw_value_verified": true
+        }
+      ],
+      "raw_resource_values_verified": true
+    }
+  },
+  "fpga_demonstrations": [
+    {
+      "mode": 768,
+      "status": "PASS",
+      "board_verification_code": "1E113F",
+      "message_bytes": 38,
+      "configured_core_clock_hz": 160000000,
+      "utc": "2026-10-21T08:13:20.414601+00:00",
+      "raw_evidence": "09_reports/channel/20261021_151314_964463/evidence.json",
+      "kem_measurements": [
+        {
+          "operation": "KeyGen",
+          "cycles": 70801,
+          "ss_sha3": "-"
+        },
+        {
+          "operation": "Decaps",
+          "cycles": 130426,
+          "ss_sha3": "443D8360B2CD34BE82BC39ADA759DF89F1473741EFD2B157D72D6ED0CE01BC15"
+        },
+        {
+          "operation": "Encaps",
+          "cycles": 94400,
+          "ss_sha3": "1E113F7BDAE69B0189F8B2781EAC2E22EF39579EDE79F938E0717F26C1255BFF"
+        }
+      ]
+    },
+    {
+      "mode": 1024,
+      "status": "PASS",
+      "board_verification_code": "812BD5",
+      "message_bytes": 38,
+      "configured_core_clock_hz": 160000000,
+      "utc": "2026-10-21T08:22:33.603359+00:00",
+      "raw_evidence": "09_reports/channel/20261021_152227_858743/evidence.json",
+      "kem_measurements": [
+        {
+          "operation": "KeyGen",
+          "cycles": 112719,
+          "ss_sha3": "-"
+        },
+        {
+          "operation": "Decaps",
+          "cycles": 187833,
+          "ss_sha3": "371073888906DB117917D5B08F8A43CD8D21E1ADFB37D7737B0529F1702E68D8"
+        },
+        {
+          "operation": "Encaps",
+          "cycles": 141546,
+          "ss_sha3": "812BD55A124D699CFD5A1960CD98E1EC2C09D8A698F61E141A6CD4C4F8493173"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "A2, SB2 and SB8 do not meet setup at all corners for 160 MHz; nominal latency conversion is not an achieved clock claim.",
+    "The BU_COMPILE_RESULTS_20261025.json latest_a2 property is an older intermediate record; selected A2 is A2_FINAL_RESULTS_20261025.json and A2_20261025_094051.",
+    "A4 kept the historical v2 file names in its fitted snapshot; the active project directory was subsequently renamed continuous_banked_cycle_opt. Logs from the workbook source and the newer selected regression are retained.",
+    "FPGA demonstration records retain their actual acquisition timestamps; the report selection date is 25 October 2026. The SOF used for those runs was not hashed in the evidence records.",
+    "Python ACVP checking is reference-model checking, not a claim of RTL ACVP certification.",
+    "Power, ASIC physical sign-off, entropy quality certification and CDC/MTBF sign-off are not measured by these logs."
+  ],
+  "raw_files": [
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_channel_160.sdc",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_channel_160.sdc",
+      "bytes": 730,
+      "sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.rpt",
+      "bytes": 5153408,
+      "sha256": "84f60e193da4a12bbb1d51117d1dab401a6815f2b6ec7aefb1671e342179bb4f"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.fit.summary",
+      "bytes": 774,
+      "sha256": "7d8efa8d30e86f94cf7eb995e93cc407f6fd587801b51449a25337411854e39a"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.flow.rpt",
+      "bytes": 10867,
+      "sha256": "6f528293d74d0f88ae81390a5ebd16830666d5c4d9cec6e82cd04335cfee99e3"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.qsf",
+      "bytes": 11354,
+      "sha256": "de2cef4d231a834a936b7b72e6a4a701f3be0eec97e78ce2abfbfdbe2158c85c"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.rpt",
+      "bytes": 231278,
+      "sha256": "b16174ae69c48d0700db8ce298f5dec1c161d8efc08871538db4aaeaa6687d58"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/A0_20261024_000741/mlkem_iterative_baseline_de10.sta.summary",
+      "bytes": 2711,
+      "sha256": "c8d2605821b09136a690102c5d0321358268737a95b3c48760ffcfd131630844"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/compile.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/compile.log",
+      "bytes": 22991,
+      "sha256": "70c20705b49dd4dec1ccc188ddaf794a842a618c683d147c860e04affbb189c7"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/generate_full_vectors.py.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/generate_full_vectors.py.log",
+      "bytes": 254,
+      "sha256": "b00bb8dc1e8d297dd38efb3c3b410324f849b3fb32a327892fdcc787b599f09f"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/generate_service_vectors.py.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/generate_service_vectors.py.log",
+      "bytes": 158,
+      "sha256": "c0a122e6768720f25c79ff7216a7deacc3f1927d2fa9a02b9da6e22eb7b0618e"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/inputs.json",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/inputs.json",
+      "bytes": 58323,
+      "sha256": "ef75d685420d0303fa8cfb7e78e89dae422147d856ddbaf8887407d6d4e7a9fa"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/summary.txt",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/summary.txt",
+      "bytes": 176,
+      "sha256": "511c5d02e4eb3540967c444323c1c9d40a03eb80a7bf6d3a38795488776754f6"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_crypto.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_crypto.log",
+      "bytes": 2335,
+      "sha256": "146286898ac9af2384ddd58d753d5fb28f4fc987020eb5ab74c5c5c3b9a221e7"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_record.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_record.log",
+      "bytes": 2285,
+      "sha256": "690031980ba3ad6fccbf3657097d600873073f33ee614baf9bad7d8a9a24ef33"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_top.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_channel_top.log",
+      "bytes": 4486,
+      "sha256": "d62ffcdcdd4afedaf57f83777cea1c1a31537ed39a8f2ed27581b8210d48651a"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_clock_uart_100.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_clock_uart_100.log",
+      "bytes": 1257,
+      "sha256": "d2eb96c8eb37341619a9fa438b07051fb303f483968d2ee61b394b0e7a469e98"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_codec_sampler.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_codec_sampler.log",
+      "bytes": 1336,
+      "sha256": "dee156b0cdae2567eaa4bc71f773095b5381c1b15bbbbf519e92a6b668c54bad"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_compress_seq.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_compress_seq.log",
+      "bytes": 990,
+      "sha256": "1aea5de9f4ea015c05da1b56e827c69b6a5468e5c896f50061cb55abadfb8643"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_kat.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_kat.log",
+      "bytes": 1312,
+      "sha256": "2a149d441caaec8c7ebc2fc6d067cb13af53a1f1542838fe7dc2b3d12528c6c2"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge.log",
+      "bytes": 1406,
+      "sha256": "8f8c5d839198a7787045feb1dc385fadbb3c301d82aa1b156fc257a8b1fbdaa7"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_keccak_sponge_clear.log",
+      "bytes": 1624,
+      "sha256": "f6427490dde8bb0eb8a09ca171e88f3ce51b084ed5d10a7a90686071df2f1059"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mlkem_service_core.log",
+      "bytes": 6843,
+      "sha256": "a0f76d8c09f43ceb1a2a7655e8280822d1f39d57dbdddcb90dd57e4b0ed62eac"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_mod_mul_pipeline.log",
+      "bytes": 1050,
+      "sha256": "aeb1723f0462c1cadfe834cb83ebb01d2f08564f56e808d934df88b86769aede"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_multiply_ntts.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_multiply_ntts.log",
+      "bytes": 1468,
+      "sha256": "ac3baca5e7635053641fd106e4090d0916f698d80a4001906acf997fe8911ea4"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_ntt_intt.log",
+      "bytes": 1536,
+      "sha256": "f574c19581ef57523447aae71f3b94b90941e5c61930a940d93e568fb400bf5b"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/tb_random_subsystem.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/tb_random_subsystem.log",
+      "bytes": 1794,
+      "sha256": "16ee9d3e552b9d53f5d1d50a7928748ffbf5b3dc6238adcf1a3820834fb5c0e0"
+    },
+    {
+      "source": "09_reports/iterative_baseline/run_20261023_233228_764/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/iterative_baseline/run_20261023_233228_764/validate_mlkem_acvp.py.log",
+      "bytes": 126,
+      "sha256": "0324341934208555de76173a5a11f067ac6209731880128a8b4460852d363a30"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.rpt",
+      "bytes": 4641469,
+      "sha256": "54b5f326666c2a4fe2a6311a74cc19f7048314be2806fcc002114ca9fc338fd6"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.fit.summary",
+      "bytes": 763,
+      "sha256": "c1b03e8cd3b7b16aa7324012b6483238d047c20ea00bc664dc8b3d35d6dca63e"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.flow.rpt",
+      "bytes": 10225,
+      "sha256": "97333db5eb6172e97f02b027e542e3b0e25070c457d22e612506e77cd0142e40"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.qsf",
+      "bytes": 11281,
+      "sha256": "7e19250265cff8c0767b9e95d8a5892bdf4914bfacf1c4f78555d038d153c48b"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.rpt",
+      "bytes": 231245,
+      "sha256": "1fb6af9153d252cbadbbe64290207162b8e25fc4e14365a0dad44869dadf20db"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/A1_20261024_075119/mlkem_channel_de10.sta.summary",
+      "bytes": 2711,
+      "sha256": "02aff4a4a364987bd0621371f4b20d94d1f867cacaba9b316cb77cd965b34b9d"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/channel_demo.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/channel_demo.py.log",
+      "bytes": 172,
+      "sha256": "ce3cd8bf0e21228236dd816e2d833738b4b94e76f31c371e2a95b0d9920dd68f"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/clear_preview.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/clear_preview.log",
+      "bytes": 1925,
+      "sha256": "52d1f1f5404aacce609a0201e7e8dfe1ca0f86861a09811b946df93e894a62ac"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/compile.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/compile.log",
+      "bytes": 22941,
+      "sha256": "ced93300f059f538a005b424e20e6e92ed98f8f92ae9a4babddad099b89f321a"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_channel_vectors.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_channel_vectors.py.log",
+      "bytes": 164,
+      "sha256": "0950532104dfbd1b5adb239617fa5f7b614fbe54e64bdb8a4ebbecacb40c23b3"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_full_vectors.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_full_vectors.py.log",
+      "bytes": 254,
+      "sha256": "d90900bb9a14c9b42092b6efeb8738aa743383a16d5e02c1425c57ae0bb595fe"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_service_vectors.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/generate_service_vectors.py.log",
+      "bytes": 158,
+      "sha256": "c0a122e6768720f25c79ff7216a7deacc3f1927d2fa9a02b9da6e22eb7b0618e"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/inputs.json",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/inputs.json",
+      "bytes": 60008,
+      "sha256": "6596ff86e3a8b63579eb07fb581b60847b6bd160530a4c48782f3b23d51b788b"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_compile.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_compile.log",
+      "bytes": 781,
+      "sha256": "5f194b3ee5f1676bbb8b180b2d985a0fb6de0ece1c93f36d71330b765bd524d5"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_100.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_100.log",
+      "bytes": 2221,
+      "sha256": "93c71c1c8582f3df12e57388c1bea1bb058168f00c7c4b1233d4033da7445bec"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_110.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_110.log",
+      "bytes": 2223,
+      "sha256": "0bdb612e559c746dbd8c08c2cade5969b87a226f12f4cff1c8dd7d6ced675bcd"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_150.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_150.log",
+      "bytes": 2224,
+      "sha256": "6b30c79eb56d4bc11395aa84f57f50258a85788f1bd363f60cdd87d8ce92aeed"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_160.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/pll_vendor_160.log",
+      "bytes": 2224,
+      "sha256": "c0432e392561ccba00e351714822eff41fd324bfba7790eb5dce1cd3adfe4026"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/summary.txt",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/summary.txt",
+      "bytes": 216,
+      "sha256": "3bcb772d7ae1a55aea90b7df622d1c5d1001f4d0fbc86de8fa1c18359eb72364"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_crypto.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_crypto.log",
+      "bytes": 2335,
+      "sha256": "9d06ad1c8d67f3b242e8f7429211769bb8199e07fef1a7cb66c26f2328f172a8"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_pipeline_guards.log",
+      "bytes": 2026,
+      "sha256": "a964e083a0c55bf16404948d2e20f07a661184ddfed83b6969c39fdc552743af"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_record.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_record.log",
+      "bytes": 2282,
+      "sha256": "229a233a30a8a3a53067a50e98232ddbb9bbc979d27e265fda52c88e72abdd34"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_top.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_channel_top.log",
+      "bytes": 4486,
+      "sha256": "4cffeed1f91f92eaddb10a0a175473b3a3d59e50b90cc8f4ff7aea9252628fb0"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_clock_uart_100.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_clock_uart_100.log",
+      "bytes": 1257,
+      "sha256": "e80a5b142bea66dc8c6cc48f5470bbc6955b67e3910d4282249984dcc81950d1"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_reduction_guard.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_reduction_guard.log",
+      "bytes": 1175,
+      "sha256": "8e1582622c1f348f260278326c789b696572e3f4842ee826eb548f5bb0d0efbd"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_sampler.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_codec_sampler.log",
+      "bytes": 1336,
+      "sha256": "b7956432209c9c25f3cdbda766c64b44ed2fa34c2ddd5d5518cd8affc4055085"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_compress_seq.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_compress_seq.log",
+      "bytes": 990,
+      "sha256": "f29b8ce179b670079043e77c755f28df3f603f4327533718bccfac21453d530b"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_kat.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_kat.log",
+      "bytes": 1312,
+      "sha256": "4827fc10d9e5e6d40a9276ffe7f81aea552d641eb9420b889dacfdc84b20db5d"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge.log",
+      "bytes": 1406,
+      "sha256": "ef5f0fcdb116d2f8403db4b990a39ff08bdd059dd4d20d188324685ec728e08f"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_keccak_sponge_clear.log",
+      "bytes": 1624,
+      "sha256": "20464e39d079b2b3e72a9aa6e3d828e999a79f7e394871434ce2764947bc6c94"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mlkem_service_core.log",
+      "bytes": 6811,
+      "sha256": "0230e297cba96051d56e879cb106594242c100d08678f0efcd5f35e2fff62a73"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_mod_mul_pipeline.log",
+      "bytes": 1050,
+      "sha256": "3db09c67f1511f04e488ff3895e6be13dc81fd275e593aab8c84c8ec52d1b68d"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_multiply_ntts.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_multiply_ntts.log",
+      "bytes": 1466,
+      "sha256": "e561b84b18c067e3651a24243816c2bf5c67791c3fd332b006f78dccb1844a6d"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_intt.log",
+      "bytes": 1529,
+      "sha256": "6e4493a2bff1533b4ef6f531e168a32d5598ee2e3dff73a3b10f2e5fa86d3c97"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_stream.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_ntt_stream.log",
+      "bytes": 1742,
+      "sha256": "d8dfd586222a8c4a16bc2afe89ae572b73da7abd00c49d379346e132d68ad1bb"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_opt100_memory_guards.log",
+      "bytes": 1589,
+      "sha256": "c6f81652603fb7f3f1c7a5c2bca0c2fd7a8f12c7cf009a5856b5b5b71e0d0339"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_random_subsystem.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/tb_random_subsystem.log",
+      "bytes": 1794,
+      "sha256": "3bf97e23a96e717931f1fcad144b02dec52fbec6cdc4534634abfc1a9ff79fa3"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/test_channel_host.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/test_channel_host.py.log",
+      "bytes": 222,
+      "sha256": "defa2de8213ab83831e6b17ec51cfa0031c09cca1c6170b792d638586658caef"
+    },
+    {
+      "source": "09_reports/streaming_pingpong/run_20261024_014501_279/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/streaming_pingpong/run_20261024_014501_279/validate_mlkem_acvp.py.log",
+      "bytes": 126,
+      "sha256": "0324341934208555de76173a5a11f067ac6209731880128a8b4460852d363a30"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_channel_160.sdc",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_channel_160.sdc",
+      "bytes": 730,
+      "sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.rpt",
+      "bytes": 3757431,
+      "sha256": "8bc45c7067b1b6d49ac35ea7b90a2a7cb0121bf2a90df14c50bf1abaf5302e8f"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.fit.summary",
+      "bytes": 773,
+      "sha256": "856ff0afb65c90c0077580fadaa19cbbc56b2eebcc5386c21ade7810f78db7b5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.flow.rpt",
+      "bytes": 11381,
+      "sha256": "79f291193ed370ccb08eb59ad802956badc8abd7665b3fbe405f446dbcc6a766"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.qsf",
+      "bytes": 11866,
+      "sha256": "0fd24f76c043e7b328a9664bb14dbee1bed2f34614fb8f080be5fbebdd7d6695"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.rpt",
+      "bytes": 231447,
+      "sha256": "e53b46fb12827c0a9363b3029643ae50f4c7cd9c81809ff3e543dbb15cdd926c"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/mlkem_continuous_banked_de10.sta.summary",
+      "bytes": 2713,
+      "sha256": "426670ea6ae6f6431d9c71eadf3ef5d9e6484dcb7c37018f21b09bf134b19db3"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_20261025_094051/rtl_sources_sha256.json",
+      "published_path": "09_reports/architecture_tracking/A2_20261025_094051/rtl_sources_sha256.json",
+      "bytes": 6222,
+      "sha256": "81f1dbfd8bc0dd4859d4bcfb44a9f4ac4f2dc57907afcbcd8360f84839c37771"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/channel_demo.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/channel_demo.py.log",
+      "bytes": 85,
+      "sha256": "6f73e0fb6508e6c00a9fdb91ed3d285f630511d6b4de588a6c963a9176a49ad7"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/compile.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/compile.log",
+      "bytes": 26055,
+      "sha256": "997bc23fbdd60141194e5687a909034a12f8d2386b891587fcd91c8a14d93ded"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/generate_channel_vectors.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/generate_channel_vectors.py.log",
+      "bytes": 81,
+      "sha256": "be3dcfa7157dd77a3d72e346a4adbe4e305f007b1c00da2c871c1ae5244053f5"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/generate_full_vectors.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/generate_full_vectors.py.log",
+      "bytes": 125,
+      "sha256": "68d03406222e0bac7805b03d836df65bc75b3369be09df136131184ecaa2ae17"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/generate_service_vectors.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/generate_service_vectors.py.log",
+      "bytes": 78,
+      "sha256": "4dd86f0ac2849b94b891bced3548f5f796ebfb1bf921b909a1efcb3aa82790e6"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/inputs.json",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/inputs.json",
+      "bytes": 47066,
+      "sha256": "04c48e663cb69d5b886d94c413627e88a7f70628ab77bbcc6c3117dee6c4ba2d"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/pll_compile.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/pll_compile.log",
+      "bytes": 777,
+      "sha256": "2a77532f12e3bcc558c4bb399339d4cd07664974cf3932f3ba61ed0371bb0c96"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_100.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_100.log",
+      "bytes": 2214,
+      "sha256": "1223c54beeb042b2021a7fbd1b88a037884f096cbd7c2c3e5221651750911d3a"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_110.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_110.log",
+      "bytes": 2216,
+      "sha256": "add396cf48be408d3b4de1ddfb1a65df2df2cc6e152217a9e48c53ca4065d7e1"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_150.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_150.log",
+      "bytes": 2217,
+      "sha256": "b6bf96c0313e68cbce05d50ae3d8cabfe14e6329f815241cdcca89715f3183dd"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_160.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/pll_vendor_160.log",
+      "bytes": 2217,
+      "sha256": "691cfc3349649986dd8e46b786953e35a73d9ae43c7e453eee7443e91adc1db7"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/sampler_busy_contract.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/sampler_busy_contract.log",
+      "bytes": 1199,
+      "sha256": "de99284beb60cbae803ec8d9e6de38f6974d103d5951197f1ab1c5b2e297b3a3"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/summary.txt",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/summary.txt",
+      "bytes": 129,
+      "sha256": "a53a47368d8104adcabc6c68cb1b2011b96f5e6fe9e2dca50a7acdf3aa22d450"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_crypto.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_crypto.log",
+      "bytes": 2767,
+      "sha256": "3dded624b435b9424aa0abdb1731d2488b9b7becf9283df90ae529572bbdeb06"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_kem_reset_timeout.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_kem_reset_timeout.log",
+      "bytes": 2772,
+      "sha256": "50aa660a0f62e034b1101bc7f726f442d4746b85d446a5c02260a827302e2c14"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_pipeline_guards.log",
+      "bytes": 1969,
+      "sha256": "bbed5a1b44588f3667254a43db7c3261efa9a1692ae6aa195850ec2d5a86f36c"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_record.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_record.log",
+      "bytes": 2271,
+      "sha256": "f2b4e5ab88d44133486c7bdc18e1ce5f9dfe0ca90a1e1bfc32e9360cf647bad8"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_top.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_channel_top.log",
+      "bytes": 4549,
+      "sha256": "68d6419303919e9be7b031ce50f0a20e26b087c2cc12c633250c9e65236eff59"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_clock_uart_100.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_clock_uart_100.log",
+      "bytes": 1250,
+      "sha256": "aca46ca4db6f9d5a0f514b0ec0696552d97664b189e895669e2032488f6cc5f6"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_codec_sampler.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_codec_sampler.log",
+      "bytes": 1329,
+      "sha256": "1457aa731940a0aa0aaaa774cdef7a4e4efa466daf25db52dff232312e4a23e6"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_compress_seq.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_compress_seq.log",
+      "bytes": 985,
+      "sha256": "b5c5622222e4306233d64ff97d07b20717c51c4936a320fbe9bb93e887e13641"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_kat.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_kat.log",
+      "bytes": 1305,
+      "sha256": "23a889835dcc1458c4d54ea41be7364974ff42cc38e55515578499e6318af666"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge.log",
+      "bytes": 1397,
+      "sha256": "20d25063a4e62a90d4ad7e2c710e7de3cdc58a1057b124acb95e53e8116a1f85"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_keccak_sponge_clear.log",
+      "bytes": 1588,
+      "sha256": "ae173bd7c51a4d6315e4fc4ab8bb5db29c7107d9ee68de5ffcda3ae872b60496"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_mlkem_service_core.log",
+      "bytes": 6873,
+      "sha256": "7d26397c92cf1f880d17d28883ce76d32a2c14b448a990b32689cbdc2499f76e"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_mod_mul_pipeline.log",
+      "bytes": 1045,
+      "sha256": "30a719f88d027194b16ba270860db3b14c708ec7a043aebb6bce185bc14867fc"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_multiply_ntts.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_multiply_ntts.log",
+      "bytes": 1456,
+      "sha256": "11af2fb317e461e815cca42606bbda9db2623e02c11686c315906290e2ed687e"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_banked_guards.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_banked_guards.log",
+      "bytes": 1897,
+      "sha256": "a0e40d9cd99f99595ead59d3b741fb4627aa3727e6f376556fc13590b88d6e5a"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_ntt_intt.log",
+      "bytes": 1525,
+      "sha256": "1cca43e7067e858b470243d664e2108896423471b6c3153d39f3cac610273cc6"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_opt100_memory_guards.log",
+      "bytes": 2135,
+      "sha256": "1a0293d668aba4fb823986d2b7fa49b6b8ecc830f72660e2fe4fe68a15c1cce0"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/tb_random_subsystem.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/tb_random_subsystem.log",
+      "bytes": 1783,
+      "sha256": "eeb7cb276e2a3df58fcc67405ca8e7549e9efa98d3214fe792eb7936cad4c920"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/test_channel_host.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/test_channel_host.py.log",
+      "bytes": 110,
+      "sha256": "e9a72d0809d99bf9b8566d1b70affda9d89292f8d320cc3eeb5f650e7fbee37e"
+    },
+    {
+      "source": "09_reports/continuous_banked/run_20261025_085959_024/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/continuous_banked/run_20261025_085959_024/validate_mlkem_acvp.py.log",
+      "bytes": 62,
+      "sha256": "16526c97373d4707abf4f27efbfb720c7e117586371b9423b03393504bea69cc"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.rpt",
+      "bytes": 5695082,
+      "sha256": "e526288dadf9c13928c22cda69b6e49ac46c918b5d15e34cc0dbf46fc83e2816"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.fit.summary",
+      "bytes": 786,
+      "sha256": "3d14919dc0496e1cae2f75a6e6cacb05544b10214e1dc9cc4592996e5b7ec208"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.flow.rpt",
+      "bytes": 11907,
+      "sha256": "f0fbb2b540c60f6c3bec80a01a5e534adb16a197de19c07d8d3c06fa33245aac"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qpf",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qpf",
+      "bytes": 88,
+      "sha256": "72fa9b25d62b097238875fca24da47d26295b40d52df10fa8b1e2731211994d9"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.qsf",
+      "bytes": 12179,
+      "sha256": "694a71bfde1d9bf2cb7c572daf1998b3ec2d6ac801e972407a9c39b614d2f538"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.rpt",
+      "bytes": 231590,
+      "sha256": "c9e3d949a9d73bda6f9ad7a7f21ec584e4f45c53e4c0ea7c03b9f35872b9ea6a"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/A4_20261025_latest_before_consolidation/mlkem_continuous_banked_cycle_opt_v2_de10.sta.summary",
+      "bytes": 2711,
+      "sha256": "e867745983397f91c07481975f03059021f69c7f271c00713b54434d287934d8"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/channel_demo.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/channel_demo.py.log",
+      "bytes": 85,
+      "sha256": "6f73e0fb6508e6c00a9fdb91ed3d285f630511d6b4de588a6c963a9176a49ad7"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/compile.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/compile.log",
+      "bytes": 33537,
+      "sha256": "9827a52ae8b477575a0d2f18db4b087feb4d87c2ef77b55d7fe82109d0ba01b2"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_channel_vectors.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_channel_vectors.py.log",
+      "bytes": 81,
+      "sha256": "be3dcfa7157dd77a3d72e346a4adbe4e305f007b1c00da2c871c1ae5244053f5"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_full_vectors.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_full_vectors.py.log",
+      "bytes": 135,
+      "sha256": "e84d05616a7d1d4113e19c2ec8257849ae7f45b7d91b34024b74f8c7a882c94b"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_service_vectors.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/generate_service_vectors.py.log",
+      "bytes": 78,
+      "sha256": "4dd86f0ac2849b94b891bced3548f5f796ebfb1bf921b909a1efcb3aa82790e6"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/inputs.json",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/inputs.json",
+      "bytes": 49161,
+      "sha256": "9f445c3a306f06e7d4511913b8590f19cd753d826b5f4ad52c342450598b9509"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_compile.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_compile.log",
+      "bytes": 817,
+      "sha256": "022aef7f44717e8c4df2c6fe48463d17c1f03c27d1aacc580593906702e1447e"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_100.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_100.log",
+      "bytes": 2284,
+      "sha256": "1621c040711d03cc4b68154b7d5343fbbbf7c82d41622c07198233fd6d377693"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_110.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_110.log",
+      "bytes": 2286,
+      "sha256": "eaf775683dd4aa69d90f2d8317d59aaf1ec4caeaabfd69b53e2e868fc7d81c2c"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_150.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_150.log",
+      "bytes": 2287,
+      "sha256": "12036647cb73a89ae78819024c79972c5afc6beffa01b79f24026a240eba08be"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_160.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/pll_vendor_160.log",
+      "bytes": 2287,
+      "sha256": "66d6d9dd87054efa2d2d481754e148cca2c1c288bb80fb6ad7741115ee8f8874"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/sampler_busy_contract.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/sampler_busy_contract.log",
+      "bytes": 1269,
+      "sha256": "ecbc1f124b9c4a227106e0eb279326eebad584905128c4284dcb140a7eb654c2"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/summary.txt",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/summary.txt",
+      "bytes": 111,
+      "sha256": "1adcf072c80879911a4e662340676b644d003e181e96b9d6015a0048abbe255c"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_crypto.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_crypto.log",
+      "bytes": 2443,
+      "sha256": "a2e7bedb84ff9a6ef4e3ac4cbed40f11a8d4d2529d7fe52b39fa6a52038b21bb"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_kem_reset_timeout.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_kem_reset_timeout.log",
+      "bytes": 2992,
+      "sha256": "0127efb0b4ba5a74d62917fc533bdd10243a8ff7dc2c3f302b68c60eaded060e"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_pipeline_guards.log",
+      "bytes": 2152,
+      "sha256": "cde1429b95a06e66bf277e4730c8ad23ae62e42d8d0408db2fc1299552fbcc6e"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_record.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_record.log",
+      "bytes": 2411,
+      "sha256": "b29c35dd296e61abb7abcfc13955a3697125622662b400b733fec91e9e5d5afc"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_top.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_channel_top.log",
+      "bytes": 4919,
+      "sha256": "ac166ebeb6d9d83953aa2b39c8c47d82c46c88ffec46a0b88acd016f89d94a05"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_clock_uart_100.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_clock_uart_100.log",
+      "bytes": 1320,
+      "sha256": "81878d6fa9f70dde0363bbc83c3f13a412ca0bf96c62321c740cec77e31f7ac7"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_codec_sampler.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_codec_sampler.log",
+      "bytes": 1399,
+      "sha256": "b7e1308ee9eb2fd1d82d92f8bc90e55ff651a97162d2afe0fe6b1356b43f2dfc"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_compress_seq.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_compress_seq.log",
+      "bytes": 1035,
+      "sha256": "eca4a537361366c3c6fdecd296a3c7931f3f329e05b98037a57d7b31c9179b72"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_kat.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_kat.log",
+      "bytes": 1375,
+      "sha256": "b9e7426ec94ec58d56cc4f0859144cf838bf5660ec76368d4f3cfa2ac6cf5d22"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge.log",
+      "bytes": 1477,
+      "sha256": "87b4b06314a0935807d6daf84ef19db196f49cad812eb20d40de042005041404"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_keccak_sponge_clear.log",
+      "bytes": 1668,
+      "sha256": "2eb475ec87df320eb3e6214df7356387aa71726c58db6138d8abaf411be34f2d"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mlkem_service_core.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mlkem_service_core.log",
+      "bytes": 7080,
+      "sha256": "03c2bc661a8354ba51dff63f6d44376164a7ca06be8472aefa82e15dc4af8466"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_mod_mul_pipeline.log",
+      "bytes": 1095,
+      "sha256": "2ff9c14142d43f70281ec8e52b6a89a9d5d757cea33db3bf0c84acd6c5c0951d"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_multiply_ntts.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_multiply_ntts.log",
+      "bytes": 1556,
+      "sha256": "a849b4422b61df43c2bb4d3cc1fe84d469fa526dea4e8789f993abb4c0c2b86c"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_banked_guards.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_banked_guards.log",
+      "bytes": 2037,
+      "sha256": "4cad9d0730edf01dd5c01f5efbcd38d7a726c762d122b82440987fadd9dca9b0"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_intt.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_ntt_intt.log",
+      "bytes": 1625,
+      "sha256": "89d1f1e8888ddc342265128220cb77f6599e8522647423110c8e4c98765b2db0"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_opt100_memory_guards.log",
+      "bytes": 1709,
+      "sha256": "fe17976e7cb04cc3037e965f59cf28243e8eb9ade42468744638dea790579d8e"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_random_subsystem.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/tb_random_subsystem.log",
+      "bytes": 1893,
+      "sha256": "95fe077313b7a816a8a690c9fee077dae3df30a6fb1ec3d4fec538d60ca82377"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/test_channel_host.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/test_channel_host.py.log",
+      "bytes": 110,
+      "sha256": "e9a72d0809d99bf9b8566d1b70affda9d89292f8d320cc3eeb5f650e7fbee37e"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt/run_20261025_060635_998/validate_mlkem_acvp.py.log",
+      "bytes": 62,
+      "sha256": "16526c97373d4707abf4f27efbfb720c7e117586371b9423b03393504bea69cc"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/bu_tracker_evidence.json",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/bu_tracker_evidence.json",
+      "bytes": 44401,
+      "sha256": "606850b279bfd49443abf1ebb89085a846265e83281885e2aaab3960354d989b"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_channel_160.sdc",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_channel_160.sdc",
+      "bytes": 730,
+      "sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.rpt",
+      "bytes": 6446517,
+      "sha256": "bc96bca8abe71c0f3171c85aefee7565e656aaa5be0023914a1c30a9b4a9ff37"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.fit.summary",
+      "bytes": 779,
+      "sha256": "9ebc79cb55a4a546f053ff02c3c0a1b79a151a134923fe723e2444bcc66a7d2f"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.flow.rpt",
+      "bytes": 11531,
+      "sha256": "f64d974444bc8b9e1def2d8058051f730cfaeffa35fae41c67cfa838f58c7a8a"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qpf",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qpf",
+      "bytes": 81,
+      "sha256": "ad35a6f84c47392bb796426099d6116dd3356600f952f033cb8eab68f6dea498"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.qsf",
+      "bytes": 12223,
+      "sha256": "3d6218aa29b6c9e27642c50eb3ebfc21bd67b7c50423d08168842a63b784a264"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.rpt",
+      "bytes": 231382,
+      "sha256": "0f3fb984eb4a96fa731bf9d86c3614f686dcbb38ac27b1705a859acd4e658099"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/A5_20261024_063318/mlkem_streaming_balanced_4bu_de10.sta.summary",
+      "bytes": 2711,
+      "sha256": "4ee29e8a7c41ab0e12a0e58b690581de0538bfb881a7f68440fba5cbe7a21ebd"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/channel_demo.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/channel_demo.py.log",
+      "bytes": 172,
+      "sha256": "ce3cd8bf0e21228236dd816e2d833738b4b94e76f31c371e2a95b0d9920dd68f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/compile.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/compile.log",
+      "bytes": 35831,
+      "sha256": "f29093c77ebadf03c7d3bbc3fcaecc9ac3b56f0ec49285c5f7cb58f0f26065e1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_channel_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_channel_vectors.py.log",
+      "bytes": 164,
+      "sha256": "0950532104dfbd1b5adb239617fa5f7b614fbe54e64bdb8a4ebbecacb40c23b3"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_full_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_full_vectors.py.log",
+      "bytes": 262,
+      "sha256": "d026b38ccbeca1bebcd865b59fcd0e4fc4c4f9d36217a0445f98b2c3d0747d78"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_service_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/generate_service_vectors.py.log",
+      "bytes": 158,
+      "sha256": "c0a122e6768720f25c79ff7216a7deacc3f1927d2fa9a02b9da6e22eb7b0618e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/inputs.json",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/inputs.json",
+      "bytes": 62028,
+      "sha256": "f0abb635a13a68127d94ff694242095f7e58bfe6a87c452ca67c84a3ab3a9639"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_compile.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_compile.log",
+      "bytes": 797,
+      "sha256": "cc6d3db0c22511a62c4ba69cdb00899de9efd53aa12375cc2f89e19855ea8cde"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_100.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_100.log",
+      "bytes": 2249,
+      "sha256": "082cc9a64f770372067b32dc81dc81ffba6a7524f10a98aa70b315e69dc18f1b"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_110.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_110.log",
+      "bytes": 2251,
+      "sha256": "41e139f3446e2c447855870e58b97ee819d5382de240dbb77960dd288971773f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_150.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_150.log",
+      "bytes": 2252,
+      "sha256": "b7d0f0a04bdb8f85265c1402e32903d7206f4e3fa0a116354ee53a06acaf06a3"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_160.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/pll_vendor_160.log",
+      "bytes": 2252,
+      "sha256": "d5fa92a8d0593e4a5be561b1099a81ba1d66f4c97735191d1fea83d2bbc1b5c3"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/sampler_busy_contract.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/sampler_busy_contract.log",
+      "bytes": 1234,
+      "sha256": "1383bdd868b5c371c368d573f58480f69ede023f9da480e7836910c2fa911966"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/summary.txt",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/summary.txt",
+      "bytes": 224,
+      "sha256": "ef137cc1374eb318340b345a03d62dadce21c6cc54abae4bbbed8ee7911ad516"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_crypto.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_crypto.log",
+      "bytes": 2383,
+      "sha256": "d59690604782cf31a7a975bdd8bf471690aa5cc346e376b4c9ec2b3c0fa800c0"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_pipeline_guards.log",
+      "bytes": 2039,
+      "sha256": "0c98170dfd87e9b5e8e7428180850e442b5519a71a44ccdee6e7490bcb708a42"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_record.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_record.log",
+      "bytes": 2341,
+      "sha256": "af455315f6f4bc2189eafe45db7f4ea16fde969daaf92b95398a60a4fdbd9f12"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_top.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_channel_top.log",
+      "bytes": 4744,
+      "sha256": "649c721c350d21a79027faeb82891c380c6eeb5ad68c584f3bdd2db73fed304d"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_clock_uart_100.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_clock_uart_100.log",
+      "bytes": 1285,
+      "sha256": "7a652e876449c2ed5c8c9685eb3939a2291e9a599a710f3850f4191204d9d1a5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_codec_sampler.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_codec_sampler.log",
+      "bytes": 1364,
+      "sha256": "76c3f9928f1bd60e8d3adb6d2b56a473b21b91ef176b711a5faba5ba285b2d50"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_compress_seq.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_compress_seq.log",
+      "bytes": 1010,
+      "sha256": "22e75ae50ac71f1174b00e95f4cb2b88a7a1f1b805b8e1a04311fc74c6ba55b6"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_kat.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_kat.log",
+      "bytes": 1340,
+      "sha256": "4d5aacdd56f7a4d1ff966e1a6f3e67bc24156993020dc7b3abae93b9e86ef64e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge.log",
+      "bytes": 1437,
+      "sha256": "02908281668a243f87ce9343cad53fbb65df5e2667874750059113fa4b21c64f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_keccak_sponge_clear.log",
+      "bytes": 1628,
+      "sha256": "2ced8a23bc4a86ebd6edc2c56c4ddff4bc7314e6120a907c7a95133482c91af2"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mlkem_service_core.log",
+      "bytes": 6979,
+      "sha256": "f9c32e891651014cd851c43785ce3b673b1c335aab390f4f7ea94e9af9d502c0"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_mod_mul_pipeline.log",
+      "bytes": 1070,
+      "sha256": "9081ac2cce5146fc1a86ea9a4bbd46f83b19d6280073ea97c6e7f7ce84589c81"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_multiply_ntts.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_multiply_ntts.log",
+      "bytes": 1506,
+      "sha256": "9aec44fe3ebc33854dab127dc283a523853b0561d6ce501b6f0e9ed6e43be41d"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_banked_guards.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_banked_guards.log",
+      "bytes": 1992,
+      "sha256": "0a259f4cdfcb35a28172b70fddb1a4b4cf3ac5650735bd867c299a7aa6f02e87"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_ntt_intt.log",
+      "bytes": 1582,
+      "sha256": "45ead788e275622fb5d4e4fe608c89a3160f7a0ad0c4b4ddcd78738613003e5a"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_opt100_memory_guards.log",
+      "bytes": 1664,
+      "sha256": "8620f4af6ce9621ceac6c5f9b4bdc0512b4db3539f6d97f7988c449d2963ea05"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_random_subsystem.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/tb_random_subsystem.log",
+      "bytes": 1864,
+      "sha256": "94afb50e584b86147419842ff65442f4ac546f2a40a8ebcb46c3a16233436ca7"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/test_channel_host.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/test_channel_host.py.log",
+      "bytes": 222,
+      "sha256": "defa2de8213ab83831e6b17ec51cfa0031c09cca1c6170b792d638586658caef"
+    },
+    {
+      "source": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/streaming_balanced_4bu/run_20261024_012050_666/validate_mlkem_acvp.py.log",
+      "bytes": 126,
+      "sha256": "0324341934208555de76173a5a11f067ac6209731880128a8b4460852d363a30"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/bu_tracker_evidence.json",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/bu_tracker_evidence.json",
+      "bytes": 45150,
+      "sha256": "47865a663cc8e52335559ddb03eb00e1939bf5b9536dcf0768c816f27cd13cd2"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_channel_160.sdc",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_channel_160.sdc",
+      "bytes": 730,
+      "sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.rpt",
+      "bytes": 6057018,
+      "sha256": "bef2d9808a52b7526ccda92284908ea32ddfb42ce96b132071e0c155fd0e84e6"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.fit.summary",
+      "bytes": 778,
+      "sha256": "727f38a3436b65d7a0c1549ee287fa749bad8a70b1324c70880d393203df2313"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.flow.rpt",
+      "bytes": 11531,
+      "sha256": "a17c29217654d993e48aef92bb5fbaafbc17e471fc7de172e64426961392f291"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qpf",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qpf",
+      "bytes": 82,
+      "sha256": "4ffd6831530bd3895afcca4e09a92a75d6cb2534fdf4c10bd8f632dbf7fd9e34"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.qsf",
+      "bytes": 12223,
+      "sha256": "a72ecd06ad1f8ceba9c021ca8700b1c71d1b91a09fa1d3bc9024a0e2b92fa9fc"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.rpt",
+      "bytes": 231081,
+      "sha256": "127e0f7280c02dfcce968f1142eb7b0c6a464d3302d6777e85497857f372f4ce"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/SB2_20261025_063232/mlkem_streaming_balanced_2bu_de10.sta.summary",
+      "bytes": 2713,
+      "sha256": "25bee6d55e1d8347ef13943beb31af7b922411c69c19e00c6c8d41a97890ed09"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/channel_demo.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/channel_demo.py.log",
+      "bytes": 85,
+      "sha256": "6f73e0fb6508e6c00a9fdb91ed3d285f630511d6b4de588a6c963a9176a49ad7"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/compile.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/compile.log",
+      "bytes": 36279,
+      "sha256": "96278c03ecbb7509685511bec20840547f4e633630d0e051bce79595dcfd4340"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_channel_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_channel_vectors.py.log",
+      "bytes": 81,
+      "sha256": "be3dcfa7157dd77a3d72e346a4adbe4e305f007b1c00da2c871c1ae5244053f5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_full_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_full_vectors.py.log",
+      "bytes": 130,
+      "sha256": "0987901d48d8b9c31bd021859d71251b0fea190ad53aaec3d0c8de546920556f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_service_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/generate_service_vectors.py.log",
+      "bytes": 78,
+      "sha256": "4dd86f0ac2849b94b891bced3548f5f796ebfb1bf921b909a1efcb3aa82790e6"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/inputs.json",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/inputs.json",
+      "bytes": 62055,
+      "sha256": "bac4e9b9dbc0a120e9b3a66379e817845d808399df4867faf82252823942718e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_compile.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_compile.log",
+      "bytes": 829,
+      "sha256": "1194ce71c3b172eb2227532e6f6d019c7a6ce2e86abe454976cd8649517b8c4f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_100.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_100.log",
+      "bytes": 2281,
+      "sha256": "2920dd0ace2d32b42206bf54097bcf8a4402ff979dcc400bf74c71fb7251adb5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_110.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_110.log",
+      "bytes": 2283,
+      "sha256": "db88b988c06b5af199db636ee16e2258cb0128a3850ab32be6d7e1ff612e811a"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_150.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_150.log",
+      "bytes": 2284,
+      "sha256": "6267498318955242bdf781387c57524d649e733b1ecb6d4d0b3f69cbd6065d01"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_160.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/pll_vendor_160.log",
+      "bytes": 2284,
+      "sha256": "9b366084b05acbb22229437d72b78504bd985f47af703d6df0608376b901ce40"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/sampler_busy_contract.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/sampler_busy_contract.log",
+      "bytes": 1234,
+      "sha256": "cdda5295d79e28a16779ac6799dd61a920582620ad7b176955c853121fa1c343"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/summary.txt",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/summary.txt",
+      "bytes": 234,
+      "sha256": "a0cab8081f6bf9134b7f87ccd36c30287eeb16f9d95c367aa3efed761e18946a"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_crypto.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_crypto.log",
+      "bytes": 2415,
+      "sha256": "16f827b6b4eaa1a007c74a14c2e054efd16a0a8b4faf676c1e0fc6855aebc7d8"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_pipeline_guards.log",
+      "bytes": 2039,
+      "sha256": "08527d57b51fb467fbfcb14a0d1ae709350aec6f079e0d0e1b3f6e529afc4f05"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_record.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_record.log",
+      "bytes": 2373,
+      "sha256": "4a777b63873f243470579674e40316740272808c9f7b051e39209ccc9113271f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_top.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_channel_top.log",
+      "bytes": 4776,
+      "sha256": "9b557b0125acbcf179aa7358cb34be23dc2158c49bcd67b69e317b74c131ea1c"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_clock_uart_100.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_clock_uart_100.log",
+      "bytes": 1317,
+      "sha256": "e31fc9b31f0cf7c7e20b688e7dc88a4f4be6ea02b6cf0d47af4fb7545ce9687a"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_codec_sampler.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_codec_sampler.log",
+      "bytes": 1396,
+      "sha256": "0e0f98dfef9a9c40111c20fbbec2b0869ec9ab62d1614c38b7351c68fc684d55"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_compress_seq.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_compress_seq.log",
+      "bytes": 1042,
+      "sha256": "4cc2dd9b965ce8bcc974d537986330ce0623f435c57628a6094940c82a29b9f5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_kat.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_kat.log",
+      "bytes": 1372,
+      "sha256": "647c16dc0b45ca728a76af6ee3d474259eb27c55e3440bb999226386a6763129"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge.log",
+      "bytes": 1469,
+      "sha256": "cb3d9229ba28c3f40b6db9c98dca54b4bd6e6be6cb0ac710d96a2ad72960c6eb"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_keccak_sponge_clear.log",
+      "bytes": 1660,
+      "sha256": "e1fc8148f94d9430d8f61fbb85a4c462640c50abb3e5360f0d115593472442de"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mlkem_service_core.log",
+      "bytes": 7011,
+      "sha256": "ca3b7e17534868dc5f1e777363f2cc430167cd06546c87dbe401873afd7daf2b"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_mod_mul_pipeline.log",
+      "bytes": 1102,
+      "sha256": "6b7c9560380842667a02312e85b3e63756ff1d91d3402e80a686b0bbf654af0b"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_multiply_ntts.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_multiply_ntts.log",
+      "bytes": 1538,
+      "sha256": "ed6fdb2ae9bc12844dd73a025bac522ee6777515714625906f32fe36672b48f1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_banked_guards.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_banked_guards.log",
+      "bytes": 1992,
+      "sha256": "dd43a6c490b70011c6c3be77d9d8bc7265ad4e5339bb443c08b53f737eb9aac6"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_ntt_intt.log",
+      "bytes": 1614,
+      "sha256": "f8255a9e8f218cdb7edcc1df837537bb4611874c7e13923e7a4b65c8ada13224"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_opt100_memory_guards.log",
+      "bytes": 1664,
+      "sha256": "59ce4356628a422f2fd77cfa386df37ada4ecea5025c071d82dc2c143f571b45"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_random_subsystem.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/tb_random_subsystem.log",
+      "bytes": 1896,
+      "sha256": "65ef106b40ed8ebf9c6c929de756700876167f6f45257994b7bdf1997b1bfcd6"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/test_channel_host.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/test_channel_host.py.log",
+      "bytes": 110,
+      "sha256": "e9a72d0809d99bf9b8566d1b70affda9d89292f8d320cc3eeb5f650e7fbee37e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/streaming_balanced_2bu/run_20261025_051014_757/validate_mlkem_acvp.py.log",
+      "bytes": 62,
+      "sha256": "16526c97373d4707abf4f27efbfb720c7e117586371b9423b03393504bea69cc"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/bu_tracker_evidence.json",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/bu_tracker_evidence.json",
+      "bytes": 45270,
+      "sha256": "9e78dbda0b4a2a2f64c985130e765cf3a94f7193fb5103c3280f5c7b7f85ba2f"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_channel_160.sdc",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_channel_160.sdc",
+      "bytes": 730,
+      "sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.rpt",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.rpt",
+      "bytes": 5640809,
+      "sha256": "77fd2aebde52cc8f0bafa32e80920b641a4cc8a2c9a46cdbc8a58500787c48ef"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.summary",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.fit.summary",
+      "bytes": 779,
+      "sha256": "8fdc71971155df71fd8dc6d7901c74386e2ac7c3d1aeb6ccaaf5f0bbbdb13059"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.flow.rpt",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.flow.rpt",
+      "bytes": 11531,
+      "sha256": "7fa65b101bfddbd3b1217299fd8eec6b47855132322773ad0077e9a531baaf6c"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qpf",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qpf",
+      "bytes": 82,
+      "sha256": "41e582a5b411a18fe2045b078e268dae797d70a94003e0e01113413bb19c13da"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qsf",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.qsf",
+      "bytes": 12223,
+      "sha256": "1f531fd98c794735f729d0252bcf07433f09ebaea321d4ab24914e6ad7f8b7f1"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.rpt",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.rpt",
+      "bytes": 231269,
+      "sha256": "264b1e70973cca25d173cec043937d2898a935ae3de0d8b45928e93b7a34d5de"
+    },
+    {
+      "source": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.summary",
+      "published_path": "09_reports/architecture_tracking/SB8_20261025_063630/mlkem_streaming_balanced_8bu_de10.sta.summary",
+      "bytes": 2715,
+      "sha256": "4a566d92c838827be7fd989d7b05549f3324e42aecb0c6cdf99f3fd52c6a4c19"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/channel_demo.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/channel_demo.py.log",
+      "bytes": 85,
+      "sha256": "6f73e0fb6508e6c00a9fdb91ed3d285f630511d6b4de588a6c963a9176a49ad7"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/compile.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/compile.log",
+      "bytes": 36279,
+      "sha256": "daed427cbc6fb542e31eb00ea5dc2ebbc836856d0cebd086dbc44585d53fc767"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_channel_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_channel_vectors.py.log",
+      "bytes": 81,
+      "sha256": "be3dcfa7157dd77a3d72e346a4adbe4e305f007b1c00da2c871c1ae5244053f5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_full_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_full_vectors.py.log",
+      "bytes": 130,
+      "sha256": "1051b92a8092f843116aabbefccfad0359236c499bc142b000690364f2bdee3e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_service_vectors.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/generate_service_vectors.py.log",
+      "bytes": 78,
+      "sha256": "4dd86f0ac2849b94b891bced3548f5f796ebfb1bf921b909a1efcb3aa82790e6"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/inputs.json",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/inputs.json",
+      "bytes": 62056,
+      "sha256": "fe14d18f7fc803a6db54d9b13e136dd65d2468d3dacbe2488ff5a2c4cccea70d"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_compile.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_compile.log",
+      "bytes": 829,
+      "sha256": "e1027fdb3e44576a15a2b890a9437be9f220290fa15b702672238b6806b5f95f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_100.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_100.log",
+      "bytes": 2281,
+      "sha256": "17a0ae1fa0310819dea3a1574b06ce3e8ebf90f98126a14b8cf9aa41a8d4edd1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_110.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_110.log",
+      "bytes": 2283,
+      "sha256": "6ce47dab4a3cd6c1ee4ca9a0533c1418b1419e84e1231e31c057c4aebbfe4389"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_150.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_150.log",
+      "bytes": 2284,
+      "sha256": "1c190421877bcd5cd3962529044102ea656be719b6d5fc78cd7ce98f7f0ea9d9"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_160.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/pll_vendor_160.log",
+      "bytes": 2284,
+      "sha256": "3d677d7f35ad602eb5cf61c8319b9af13b934cd4c7c1bbc8a52fbe0a5ddd8d43"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/sampler_busy_contract.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/sampler_busy_contract.log",
+      "bytes": 1234,
+      "sha256": "53d5a4744abb7543b9a770866ad61e621318186302e9ccb4ef073076fa452a3d"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/summary.txt",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/summary.txt",
+      "bytes": 234,
+      "sha256": "35ba4ccb9c0c7c49fda7b52f44b82aa33fe15f06ead3eb63d25838fedc2a25a1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_crypto.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_crypto.log",
+      "bytes": 2415,
+      "sha256": "f394a88d01539f40f80350afefb9da7e8757ee606200eef82bac4604bd63b18e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_pipeline_guards.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_pipeline_guards.log",
+      "bytes": 2039,
+      "sha256": "24d8b7262e1ad8dd8cb8267fbd76ff2154cb47f47dcbf2ed11b7556d8f918f80"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_record.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_record.log",
+      "bytes": 2373,
+      "sha256": "215f1a77d7cbcdc7cb316f7e8712c5507b3acdf04c709f1958a84ae1ec7207cd"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_top.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_channel_top.log",
+      "bytes": 4776,
+      "sha256": "2b74e93680b80731df0a7e6ac51a404043352af29cd1d8af4a4b4338a03e446f"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_clock_uart_100.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_clock_uart_100.log",
+      "bytes": 1317,
+      "sha256": "a371049c618ae6e7f021c3a521664aee80caca871a0e683485d5539c914dd406"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_codec_sampler.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_codec_sampler.log",
+      "bytes": 1396,
+      "sha256": "a5f5bfe48f87b8613f482aa66fac99636af85e2cdb43200ef4ce7a9e5f85638a"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_compress_seq.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_compress_seq.log",
+      "bytes": 1042,
+      "sha256": "8d9d07c454620b2d55521144a1c8a8e680587f1272388b601f0b480971bea9a1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_kat.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_kat.log",
+      "bytes": 1372,
+      "sha256": "ddc68bf93824089bfe2d61e96cbeb2a633aef44e0e8a9cd7beb0bdc14ea81d28"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge.log",
+      "bytes": 1469,
+      "sha256": "8dc81b8622e6f501c26e9dea02e86339cbbf617e967aa4725db88346cb618d87"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge_clear.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_keccak_sponge_clear.log",
+      "bytes": 1660,
+      "sha256": "c4af4d3b1f654b21f1cded836cebc187e4e0e2e4ea79a58a52b511b864f974df"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mlkem_service_core.log",
+      "bytes": 7008,
+      "sha256": "7f9178e1c36b29a453b84ca9401156517a81e4e2062bafe7d0bbf8d5f6a6cec5"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mod_mul_pipeline.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_mod_mul_pipeline.log",
+      "bytes": 1102,
+      "sha256": "e24e552c65bc45a7416e4ceb9d7fe96b343655a3123796ae000a156edc87523c"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_multiply_ntts.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_multiply_ntts.log",
+      "bytes": 1538,
+      "sha256": "4c31eba6d0caadd79fe045b78a6fcc5b4ead32c1c4b4239e9ab54e06c99fcba1"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_banked_guards.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_banked_guards.log",
+      "bytes": 1992,
+      "sha256": "772118c3713c4d9df4a8c7e3ad38c732704f24a751a812bca0cc3bd61acae006"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_ntt_intt.log",
+      "bytes": 1614,
+      "sha256": "6cbe2989b8c3a1f2d26dde435c9dca2a6119e4038a67034b5895b1ef56bc2f4d"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_opt100_memory_guards.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_opt100_memory_guards.log",
+      "bytes": 1664,
+      "sha256": "33b4b77f4895e4dafb7b5d9a923d17ba8343532d4ab13b9c99daf9d30859c22b"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_random_subsystem.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/tb_random_subsystem.log",
+      "bytes": 1896,
+      "sha256": "92e6a679e816b9fcd7bcdd48d4e586487ed3a4f0ac507376215ac6a379faca19"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/test_channel_host.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/test_channel_host.py.log",
+      "bytes": 110,
+      "sha256": "e9a72d0809d99bf9b8566d1b70affda9d89292f8d320cc3eeb5f650e7fbee37e"
+    },
+    {
+      "source": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/validate_mlkem_acvp.py.log",
+      "published_path": "09_reports/streaming_balanced_8bu/run_20261025_051014_919/validate_mlkem_acvp.py.log",
+      "bytes": 62,
+      "sha256": "16526c97373d4707abf4f27efbfb720c7e117586371b9423b03393504bea69cc"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_ntt_intt.log",
+      "bytes": 1655,
+      "sha256": "a7719343b9e1aab4c4e2a81dafb29e9410c4477d9af20bfddbb628f6ae50d991"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_multiply_ntts.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_multiply_ntts.log",
+      "bytes": 1586,
+      "sha256": "6e02d2fa5b7766c78acef4d185e9b860345f5887c17e31e4c28caf84814d7dc3"
+    },
+    {
+      "source": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+      "published_path": "09_reports/continuous_banked_cycle_opt_v2/run_20261024_060413_427/tb_mlkem_service_core.log",
+      "bytes": 7143,
+      "sha256": "7ef1ac4ec4b2a66a60307201d9b1f1bc5078e035be65b342790ced241574dde8"
+    },
+    {
+      "source": "outputs/mlkem_architecture_tracker_20261024/ML_KEM_Theo_doi_kien_truc.xlsx",
+      "published_path": "docs/ML_KEM_Theo_doi_kien_truc.xlsx",
+      "bytes": 65850,
+      "sha256": "b71c037013a617d8200940aaf337c07eaece77c9aa094f4bab704bb6a83d4597"
+    },
+    {
+      "source": "09_reports/architecture_tracking/A2_FINAL_RESULTS_20261025.json",
+      "published_path": "09_reports/architecture_tracking/A2_FINAL_RESULTS_20261025.json",
+      "bytes": 45332,
+      "sha256": "38c433d08347afec9017b4f18b0ffc235bde0c3efd566f3c2374fe864e9543cb"
+    },
+    {
+      "source": "09_reports/architecture_tracking/BU_COMPILE_RESULTS_20261025.json",
+      "published_path": "09_reports/architecture_tracking/BU_COMPILE_RESULTS_20261025.json",
+      "bytes": 197518,
+      "sha256": "733f709daa277ac9fb55c7060ded3a701ed832a53057a1f33a6f82004497f8c2"
+    },
+    {
+      "source": "09_reports/architecture_tracking/PHAN_TICH_LUA_CHON_4BU_20261025.md",
+      "published_path": "09_reports/architecture_tracking/PHAN_TICH_LUA_CHON_4BU_20261025.md",
+      "bytes": 3455,
+      "sha256": "bbeadaf4a77b939ac7e5d0bf7dd19f0c38ef48d7585d451c52752ff6fb4a797f"
+    },
+    {
+      "source": "09_reports/channel/20261021_151314_964463/evidence.json",
+      "published_path": "09_reports/channel/20261021_151314_964463/evidence.json",
+      "bytes": 16255,
+      "sha256": "bda9aa1f420c569356f681e5d420b0d6ec4d2903d85375ff7bfcd3a705f571b4"
+    },
+    {
+      "source": "09_reports/channel/20261021_152227_858743/evidence.json",
+      "published_path": "09_reports/channel/20261021_152227_858743/evidence.json",
+      "bytes": 18002,
+      "sha256": "b4722ef01b0185e42bf80710bf9583c11cf581b32c0319d077ddbaae1eaa5b74"
+    }
+  ]
+}

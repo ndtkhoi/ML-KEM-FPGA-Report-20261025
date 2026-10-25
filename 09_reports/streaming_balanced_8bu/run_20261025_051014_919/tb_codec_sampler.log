@@ -1,0 +1,25 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\tb_codec_sampler.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_8bu\run_20261025_051014_919\tb_codec_sampler.transcript.log tb_codec_sampler -do "run -all; quit -f" 
+# Start time: 05:10:58 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.tb_codec_sampler
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.poly_ram_dp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_8bu\run_20261025_051014_919\work.mlkem_sampler
+# run -all
+# BYTE_CODEC_d1: PASS
+# BYTE_CODEC_d4: PASS
+# BYTE_CODEC_d5: PASS
+# BYTE_CODEC_d10: PASS
+# BYTE_CODEC_d11: PASS
+# BYTE_CODEC_d12: PASS
+# SAMPLER_ NTT: PASS
+# SAMPLER_CBD2: PASS
+# CODEC_SAMPLER_REGRESSION: PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_8bu/tb_codec_sampler.sv(236)
+#    Time: 155736 ns  Iteration: 0  Instance: /tb_codec_sampler
+# End time: 05:10:59 on Oct 25,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

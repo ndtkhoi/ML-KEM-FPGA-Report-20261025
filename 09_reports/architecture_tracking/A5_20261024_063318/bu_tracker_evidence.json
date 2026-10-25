@@ -1,0 +1,1289 @@
+{
+  "code": "A5",
+  "lanes": 4,
+  "banks": 8,
+  "revision": "mlkem_streaming_balanced_4bu_de10",
+  "project": "D:\\ML_KEM_768_1024\\05_quartus\\streaming_balanced_4bu",
+  "snapshot": "D:\\ML_KEM_768_1024\\09_reports\\architecture_tracking\\A5_20261024_063318",
+  "run": "A5_20261024_063318",
+  "row": [
+    "A5_20261024_063318",
+    "A5",
+    46319.273125,
+    "Successful",
+    "5CSXFC6D6F31C6",
+    "18.1.0 Build 625 Lite",
+    4,
+    160,
+    27176,
+    41910,
+    null,
+    29282,
+    38577,
+    37911,
+    34302,
+    3609,
+    3940,
+    4191,
+    null,
+    239320,
+    563200,
+    55,
+    553,
+    null,
+    40,
+    112,
+    null,
+    69,
+    1,
+    225,
+    0,
+    38.21666666666667,
+    7711,
+    null,
+    "Ch\u01b0a c\u00f3 Power Analyzer",
+    "36/36 RTL kh\u1edbp regression",
+    "SHA256 kh\u1edbp regression",
+    "Assignments t\u01b0\u01a1ng \u0111\u01b0\u01a1ng regression",
+    "6c0c1db6a587b5c15ad67a152ef8bad5f02e3e82279f039ac83a1a93ec0e8db5",
+    "f0dd4e7579585dbbb32f7845597786cdec72d9d0bb7e22db80aa40228b86f469",
+    "D:/ML_KEM_768_1024/09_reports/architecture_tracking/A5_20261024_063318"
+  ],
+  "timing": [
+    {
+      "corner": "Slow 1100mV 85C",
+      "setup": 0.091,
+      "stns": 0.0,
+      "hold": 0.253,
+      "htns": 0.0,
+      "mpw": 1.562,
+      "ptns": 0.0,
+      "fmax": 162.36,
+      "rfmax": 162.36,
+      "chains": 6,
+      "settling": 2.442
+    },
+    {
+      "corner": "Slow 1100mV 0C",
+      "setup": 0.235,
+      "stns": 0.0,
+      "hold": 0.188,
+      "htns": 0.0,
+      "mpw": 1.562,
+      "ptns": 0.0,
+      "fmax": 166.25,
+      "rfmax": 166.25,
+      "chains": 6,
+      "settling": 2.599
+    },
+    {
+      "corner": "Fast 1100mV 85C",
+      "setup": 2.143,
+      "stns": 0.0,
+      "hold": 0.131,
+      "htns": 0.0,
+      "mpw": 1.562,
+      "ptns": 0.0,
+      "fmax": null,
+      "rfmax": null,
+      "chains": 6,
+      "settling": 3.613
+    },
+    {
+      "corner": "Fast 1100mV 0C",
+      "setup": 2.625,
+      "stns": 0.0,
+      "hold": 0.116,
+      "htns": 0.0,
+      "mpw": 1.562,
+      "ptns": 0.0,
+      "fmax": null,
+      "rfmax": null,
+      "chains": 6,
+      "settling": 3.91
+    }
+  ],
+  "sim_run": "20261024_012050_666",
+  "sim_id": "A5_SIM_20261024_012050_666",
+  "sim": "D:\\ML_KEM_768_1024\\09_reports\\streaming_balanced_4bu\\run_20261024_012050_666",
+  "summary": "A5_REGRESSION: PASS run=20261024_012050_666 tests=17 vendor_pll=4 host=2 negative_contract=1 INPUTS_UNCHANGED",
+  "service_cycles": {
+    "768-2": 94364,
+    "768-1": 70885,
+    "768-3": 130510,
+    "1024-2": 141525,
+    "1024-1": 112617,
+    "1024-3": 187731
+  },
+  "ntt_cycles": 235,
+  "intt_cycles": 235,
+  "multiply_cycles": 143,
+  "vector_hash": "47f427fec8763eff9d403245c91cf3ad9775b75e57ec266d913dfd7ee4682942",
+  "source_hashes": {
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\arithmetic\\mod_add.sv": "4462d559da613093b877438fa0d2bb34d476c0df5eaa71359550b6691aef8280",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\arithmetic\\mod_sub.sv": "2b4ad9d1baba3d443697517d35897793b6f35f5b40d825fced5ab967b7375a81",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\arithmetic\\mod_mul_pipe.sv": "be410312983884086c75fed0a6a94f79153c0ad9d2cbc88d70b45b965b68de84",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\mem\\poly_ram_dp.sv": "2ee7f8e12e6617e5065c075121e2d4cede97452b452c594d7a21b9205a02f098",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\mem\\poly_bank_128_sdp.sv": "946bbbd5ad1e9cf05f6b6a67e86dafa14f7c9f9aa782c1e92d8d1434efbad53f",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\ntt\\zetas_rom.sv": "8b9b26006aba33637b0263c8b44b3aef302fd12e6ad08580b4c03f0265958b5c",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\ntt\\gammas_rom.sv": "d46b2d15664399cafb6ed07b4638c3f7ebf2b23f7e2bd9719614c958aefd2eb1",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\ntt\\ntt_core.sv": "2570b8651738cebe98944fe1caece07c81c64d75768b4df16879febee09fed49",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\ntt\\multiply_ntts_core.sv": "4e640f04325fed736567d29e592d8535d3b5fe2b30bf9e52251875a54e883396",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\hash\\keccak_round_constants.sv": "3887e53f9dd844301cc1f15c28510a9939a450ce683555f3772de65964f6b43d",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\hash\\keccak_round.sv": "92be1f739144605659fb9b8837d58aa830922f6ee84cf7d0d31f2c87b3691c03",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\hash\\keccak_f1600_core.sv": "6af09d55b6befa78d1895418bcf524d57745ea8d6ff6c4294d8ffeb1db405754",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\hash\\keccak_sponge.sv": "9ed8234dda95ccc43dc93e81ef3bafd1e80600d4a68c40a91446ac92deed5a2e",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\random\\fpga_ro_entropy.sv": "2bc0218506263b95de2dd77c67c369a58e446772df69fb20143c4f8522854a45",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\random\\entropy_health.sv": "c6e2e8be8bb551f40a9ed6ce38ea5217d1c2c9eb11d3d9f30e0ccd6b2c31b7e3",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\random\\shake256_drbg.sv": "6ce9aa0f72c77e76934c40fcf3892a44becb4df708d891b75159d424ea8d1367",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\random\\mlkem_random_manager.sv": "cd0100f234324549b3c3cf9d0dc971e409b32f7b50eedf6c275abd9d6c0eb8c6",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\codec\\compress_decompress.sv": "523fdd7aafde01a1f858340ef7c368e38fe8d41b9abd15bb89908788160f114c",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\codec\\compress_seq.sv": "73db0b6f4152215fe69939af6940b09f966e9d657b893eb73d4a90133fe71d94",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\codec\\byte_codec_core.sv": "d7aff34d6320d40ff2a2f0405c1c35891e8ac70571ab2cc473a769a3d203e52d",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\sample\\mlkem_sampler.sv": "7fb69ca49dbdb9ea72c626ef50dc81ce59a62c7379df39bf23ea16f367584101",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\uart\\uart_tx.sv": "5b32c4679926b99185de469f607bc281454d331f5f8967cd17080c4a719cfea2",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\uart\\uart_rx.sv": "4a5728f0a58acd3f9d81f940af7193614f29c7fc0f7ab0ed03a63b71f7e51d93",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\display\\seg7_decode.sv": "6778c815e9c904fb08313e63aff544981c2fb09b596e348eb0b8b146ad25b867",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\top\\clock_100.sv": "4cba047c24acdb6bb2ad4b5468fe006a25f83d0bd87edbc339c8ede3f8446f1f",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\core\\mlkem_service_core.sv": "6f149e109ce280f131b101a733618812a716e0af3c050ee6b3464ba52c9d7616",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\uart\\channel_kem_uart.sv": "3f158e8e5b1f395c32466ca2071023d618245a3d6452f5cca304fa510b21bc5f",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\aead\\aes256_block.sv": "96b3b87c608c4c1183913e5fb7924f055f8766493a94f6bb6c1056348b4b8775",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\aead\\ghash_mul.sv": "f13d252dabb3e63600848774feab1783771f8627cbd03919f1f5ecf6f40e564f",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\aead\\aes_gcm_core.sv": "3fa51accf88b3700b8049647e4589721d2e3a1897fd60b826c63044e3b84d1b9",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\aead\\channel_kdf.sv": "475b15cdda259abafa59dee2c269b7546617d960ccc1ba5ce54939abe6cd5132",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\aead\\channel_session.sv": "bc40f785e1570aa298f88318b548659e8b98e8664218842ecd2fec2ce2a08736",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\uart\\channel_record_uart.sv": "a8b0c12b928cbce1b208a7054965c7c80b85bb92efcb848503c62ae4bf93ea08",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\top\\mlkem_channel_top.sv": "97fdaabf41f934802d13939bae71769c276e8db377467f53f2680ef3752c5b89",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\mem\\poly_bank_32_sdp.sv": "f5d558e5b93f1a721a3551f22221eead0a88247f67e9c4d6207304e331dd1049",
+    "D:\\ML_KEM_768_1024\\01_rtl\\architectures\\streaming_balanced_4bu\\rtl\\ntt\\ntt_core_stream4.sv": "4b4ff85e4065e2a39f05dde2584e24b87fab9908eb91ec121946447a6a80f287"
+  },
+  "sdc_sha256": "d1587376bc8bd7e500dac19938cdc2887f5868f7aaf7ea0115e05066eed162a5",
+  "warnings": [
+    {
+      "file": "map.rpt",
+      "code": "10036",
+      "message": "Verilog HDL or VHDL warning at mlkem_service_core.sv(319): object \"poly_add_q\" assigned a value but never read File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/core/mlkem_service_core.sv Line: 319"
+    },
+    {
+      "file": "map.rpt",
+      "code": "10036",
+      "message": "Verilog HDL or VHDL warning at mlkem_service_core.sv(319): object \"poly_sub_q\" assigned a value but never read File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/core/mlkem_service_core.sv Line: 319"
+    },
+    {
+      "file": "map.rpt",
+      "code": "21074",
+      "message": "Design contains 9 input pin(s) that do not drive logic"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"KEY[1]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 10"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"KEY[2]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 10"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"KEY[3]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 10"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[4]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[5]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[6]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[7]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[8]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "map.rpt",
+      "code": "15610",
+      "message": "No output dependent on input pin \"SW[9]\" File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/top/mlkem_channel_top.sv Line: 11"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "292013",
+      "message": "Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature."
+    },
+    {
+      "file": "fit.rpt",
+      "code": "15714",
+      "message": "Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "177007",
+      "message": "PLL(s) placed in location FRACTIONALPLL_X0_Y15_N0 do not have a PLL clock to compensate specified - the Fitter will attempt to compensate all PLL clocks"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[0].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[2].u_ro_lut|dataa\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "fit.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[1].u_ro_lut|dataa\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[0].u_ro_lut|datad\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[6].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[1].u_ro_lut|datae\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[7].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[2].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[3].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[2].u_ro_lut|datad\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[9].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[2].u_ro_lut|datae\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[8].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[11].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[10].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[13].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[12].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[14].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[4].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[1].u_ro_lut|datae\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[5].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[2].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[0].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332125",
+      "message": "Found combinational loop of 6 nodes File: D:/ML_KEM_768_1024/01_rtl/architectures/streaming_balanced_4bu/rtl/random/fpga_ro_entropy.sv Line: 35"
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[2].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[1].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[1].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[0].u_ro_lut|dataf\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[0].u_ro_lut|combout\""
+    },
+    {
+      "file": "sta.rpt",
+      "code": "332126",
+      "message": "Node \"u_trng|g_ro[1].g_stage[2].u_ro_lut|dataf\""
+    }
+  ],
+  "tests": 17
+}

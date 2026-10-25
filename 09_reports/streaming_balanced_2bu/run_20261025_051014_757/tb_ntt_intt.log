@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\tb_ntt_intt.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_2bu\run_20261025_051014_757\tb_ntt_intt.transcript.log tb_ntt_intt -do "run -all; quit -f" 
+# Start time: 05:11:05 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.tb_ntt_intt
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.ntt_core_stream2
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.zetas_rom
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.poly_bank_64_sdp
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_add
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_sub
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.mod_mul_pipe
+# run -all
+# NTT_FIPS203_ALG9: PASS coefficients=256 cycles=459
+# INTT_FIPS203_ALG10: PASS coefficients=256 cycles=459
+# NTT_INTT_ROUND_TRIP: PASS ntt_cycles=459 intt_cycles=459
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_2bu/tb_ntt_intt.sv(195)
+#    Time: 24636 ns  Iteration: 0  Instance: /tb_ntt_intt
+# End time: 05:11:05 on Oct 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

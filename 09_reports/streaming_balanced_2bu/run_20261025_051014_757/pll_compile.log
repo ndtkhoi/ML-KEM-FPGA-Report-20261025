@@ -1,0 +1,12 @@
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 05:10:35 on Oct 25,2026
+vlog -sv -work D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\pll_work "+define+SYNTHESIS" D:\ML_KEM_768_1024\01_rtl\architectures\streaming_balanced_2bu\rtl\top\clock_100.sv D:\ML_KEM_768_1024\01_rtl\architectures\streaming_balanced_2bu\rtl\uart\uart_tx.sv D:\ML_KEM_768_1024\01_rtl\architectures\streaming_balanced_2bu\rtl\uart\uart_rx.sv D:\ML_KEM_768_1024\02_tb\architectures\streaming_balanced_2bu\tb_clock_uart_100.sv 
+-- Compiling module clock_100
+-- Compiling module uart_tx
+-- Compiling module uart_rx
+-- Compiling module tb_clock_uart_100
+
+Top level modules:
+	tb_clock_uart_100
+End time: 05:10:35 on Oct 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

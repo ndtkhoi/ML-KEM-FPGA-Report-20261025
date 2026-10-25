@@ -1,0 +1,103 @@
+{
+  "source_compile_results": [
+    {
+      "project": "channel",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 33,
+      "defines": [],
+      "log": "09_reports/source_packaging_20261025/channel/compile.log"
+    },
+    {
+      "project": "continuous_banked",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 34,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND"
+      ],
+      "log": "09_reports/source_packaging_20261025/continuous_banked/compile.log"
+    },
+    {
+      "project": "continuous_banked_cycle_opt",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 34,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND",
+        "+define+CONTINUOUS_BANKED_CYCLE_OPT",
+        "+define+CONTINUOUS_BANKED_BYTE_STREAM_OPT",
+        "+define+CONTINUOUS_BANKED_V2_TIMING_FIX"
+      ],
+      "log": "09_reports/source_packaging_20261025/continuous_banked_cycle_opt/compile.log"
+    },
+    {
+      "project": "iterative_baseline",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 33,
+      "defines": [
+        "+define+ITERATIVE_BASELINE_TIMING_FIX"
+      ],
+      "log": "09_reports/source_packaging_20261025/iterative_baseline/compile.log"
+    },
+    {
+      "project": "streaming_balanced_2bu",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 36,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND",
+        "+define+CONTINUOUS_BANKED_CYCLE_OPT",
+        "+define+CONTINUOUS_BANKED_BYTE_STREAM_OPT",
+        "+define+CONTINUOUS_BANKED_V2_TIMING_FIX",
+        "+define+MLKEM_STREAMING_BALANCED_2BU"
+      ],
+      "log": "09_reports/source_packaging_20261025/streaming_balanced_2bu/compile.log"
+    },
+    {
+      "project": "streaming_balanced_4bu",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 36,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND",
+        "+define+CONTINUOUS_BANKED_CYCLE_OPT",
+        "+define+CONTINUOUS_BANKED_BYTE_STREAM_OPT",
+        "+define+CONTINUOUS_BANKED_V2_TIMING_FIX",
+        "+define+MLKEM_STREAMING_BALANCED_4BU"
+      ],
+      "log": "09_reports/source_packaging_20261025/streaming_balanced_4bu/compile.log"
+    },
+    {
+      "project": "streaming_balanced_4bu_keydemo",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 40,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND",
+        "+define+CONTINUOUS_BANKED_CYCLE_OPT",
+        "+define+CONTINUOUS_BANKED_BYTE_STREAM_OPT",
+        "+define+CONTINUOUS_BANKED_V2_TIMING_FIX",
+        "+define+CONTINUOUS_BANKED_BOARD_DEMO",
+        "+define+MLKEM_STREAMING_BALANCED_4BU"
+      ],
+      "log": "09_reports/source_packaging_20261025/streaming_balanced_4bu_keydemo/compile.log"
+    },
+    {
+      "project": "streaming_balanced_8bu",
+      "phase": "functional_source_compile",
+      "pass": true,
+      "rtl_file_count": 36,
+      "defines": [
+        "+define+CONTINUOUS_BANKED_FAST_FRONTEND",
+        "+define+CONTINUOUS_BANKED_CYCLE_OPT",
+        "+define+CONTINUOUS_BANKED_BYTE_STREAM_OPT",
+        "+define+CONTINUOUS_BANKED_V2_TIMING_FIX",
+        "+define+MLKEM_STREAMING_BALANCED_8BU"
+      ],
+      "log": "09_reports/source_packaging_20261025/streaming_balanced_8bu/compile.log"
+    }
+  ],
+  "scope": "Source/elaboration compile using simulation entropy and PLL branches; no synthesis, timing or hardware revalidation. Keydemo testbench compiled but not executed here."
+}

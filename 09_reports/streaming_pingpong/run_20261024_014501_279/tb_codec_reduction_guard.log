@@ -1,0 +1,16 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_codec_reduction_guard.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_codec_reduction_guard.transcript.log tb_codec_reduction_guard -do "run -all; quit -f" 
+# Start time: 01:45:39 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_codec_reduction_guard
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.byte_codec_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.poly_ram_dp
+# run -all
+# CODEC_REDUCTION_GUARD: ALL TESTS PASS checked=24576 six_widths all_12bit_values
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_pingpong/tb_codec_reduction_guard.sv(30)
+#    Time: 24576 ns  Iteration: 0  Instance: /tb_codec_reduction_guard
+# End time: 01:45:40 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

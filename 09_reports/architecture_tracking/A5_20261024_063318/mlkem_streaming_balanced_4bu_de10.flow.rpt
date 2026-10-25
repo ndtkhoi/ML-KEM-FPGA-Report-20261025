@@ -1,0 +1,143 @@
+Flow report for mlkem_streaming_balanced_4bu_de10
+Sat Oct 24 06:33:17 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Sat Oct 24 06:31:15 2026       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; mlkem_streaming_balanced_4bu_de10           ;
+; Top-level Entity Name           ; mlkem_channel_top                           ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CSXFC6D6F31C6                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 27,176 / 41,910 ( 65 % )                    ;
+; Total registers                 ; 37911                                       ;
+; Total pins                      ; 69 / 499 ( 14 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 239,320 / 5,662,720 ( 4 % )                 ;
+; Total DSP Blocks                ; 40 / 112 ( 36 % )                           ;
+; Total HSSI RX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 9 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 0 / 9 ( 0 % )                               ;
+; Total HSSI PMA TX Serializers   ; 0 / 9 ( 0 % )                               ;
+; Total PLLs                      ; 1 / 15 ( 7 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-------------------------------------------------------+
+; Flow Settings                                         ;
++-------------------+-----------------------------------+
+; Option            ; Setting                           ;
++-------------------+-----------------------------------+
+; Start date & time ; 10/24/2026 05:54:19               ;
+; Main task         ; Compilation                       ;
+; Revision Name     ; mlkem_streaming_balanced_4bu_de10 ;
++-------------------+-----------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                           ;
++----------------------------------------------+----------------------------------------+-----------------------------------+-------------------+------------+
+; Assignment Name                              ; Value                                  ; Default Value                     ; Entity Name       ; Section Id ;
++----------------------------------------------+----------------------------------------+-----------------------------------+-------------------+------------+
+; COMPILER_SIGNATURE_ID                        ; 246775571126457.179279605818812        ; --                                ; --                ; --         ;
+; ENABLE_SIGNALTAP                             ; Off                                    ; --                                ; --                ; --         ;
+; FINAL_PLACEMENT_OPTIMIZATION                 ; Always                                 ; Automatically                     ; --                ; --         ;
+; FITTER_EFFORT                                ; Standard Fit                           ; Auto Fit                          ; --                ; --         ;
+; NUM_PARALLEL_PROCESSORS                      ; 4                                      ; --                                ; --                ; --         ;
+; PARTITION_COLOR                              ; -- (Not supported for targeted family) ; --                                ; mlkem_channel_top ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL          ; -- (Not supported for targeted family) ; --                                ; mlkem_channel_top ; Top        ;
+; PARTITION_NETLIST_TYPE                       ; -- (Not supported for targeted family) ; --                                ; mlkem_channel_top ; Top        ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC               ; On                                     ; Off                               ; --                ; --         ;
+; PHYSICAL_SYNTHESIS_EFFORT                    ; Extra                                  ; Normal                            ; --                ; --         ;
+; PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION      ; On                                     ; Off                               ; --                ; --         ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING         ; On                                     ; Off                               ; --                ; --         ;
+; PLACEMENT_EFFORT_MULTIPLIER                  ; 3.0                                    ; 1.0                               ; --                ; --         ;
+; PRE_MAPPING_RESYNTHESIS                      ; On                                     ; Off                               ; --                ; --         ;
+; PROJECT_OUTPUT_DIRECTORY                     ; output_files                           ; --                                ; --                ; --         ;
+; ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION ; On                                     ; Auto                              ; --                ; --         ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL             ; MAXIMUM                                ; Normal                            ; --                ; --         ;
+; SEED                                         ; 4                                      ; 1                                 ; --                ; --         ;
+; TOP_LEVEL_ENTITY                             ; mlkem_channel_top                      ; mlkem_streaming_balanced_4bu_de10 ; --                ; --         ;
+; VERILOG_MACRO                                ; SYNTHESIS                              ; --                                ; --                ; --         ;
+; VERILOG_MACRO                                ; CONTINUOUS_BANKED_FAST_FRONTEND        ; --                                ; --                ; --         ;
+; VERILOG_MACRO                                ; CONTINUOUS_BANKED_CYCLE_OPT            ; --                                ; --                ; --         ;
+; VERILOG_MACRO                                ; CONTINUOUS_BANKED_BYTE_STREAM_OPT      ; --                                ; --                ; --         ;
+; VERILOG_MACRO                                ; CONTINUOUS_BANKED_V2_TIMING_FIX        ; --                                ; --                ; --         ;
+; VERILOG_MACRO                                ; MLKEM_STREAMING_BALANCED_4BU           ; --                                ; --                ; --         ;
++----------------------------------------------+----------------------------------------+-----------------------------------+-------------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:04:57     ; 1.8                     ; 5608 MB             ; 00:05:41                           ;
+; Fitter               ; 00:30:50     ; 1.3                     ; 7711 MB             ; 01:03:38                           ;
+; Assembler            ; 00:00:26     ; 1.0                     ; 5273 MB             ; 00:00:26                           ;
+; Timing Analyzer      ; 00:02:00     ; 3.2                     ; 6052 MB             ; 00:06:00                           ;
+; Total                ; 00:38:13     ; --                      ; --                  ; 01:15:45                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-0UG3PCE  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-0UG3PCE  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-0UG3PCE  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-0UG3PCE  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off mlkem_streaming_balanced_4bu_de10 -c mlkem_streaming_balanced_4bu_de10
+quartus_fit --read_settings_files=off --write_settings_files=off mlkem_streaming_balanced_4bu_de10 -c mlkem_streaming_balanced_4bu_de10
+quartus_asm --read_settings_files=off --write_settings_files=off mlkem_streaming_balanced_4bu_de10 -c mlkem_streaming_balanced_4bu_de10
+quartus_sta mlkem_streaming_balanced_4bu_de10 -c mlkem_streaming_balanced_4bu_de10
+
+
+

@@ -1,0 +1,28 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_channel_record.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_channel_record.transcript.log tb_channel_record -do "run -all; quit -f" 
+# Start time: 01:50:28 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_channel_record
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.channel_record_uart
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.channel_session
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.channel_kdf
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.ghash_mul
+# run -all
+# CHANNEL_RECORD mode=768 FPGA_encaps=0: PASS two_directions tamper replay epoch clear zero_max_payload
+# CHANNEL_RECORD mode=768 FPGA_encaps=1: PASS two_directions tamper replay epoch clear zero_max_payload
+# CHANNEL_RECORD mode=1024 FPGA_encaps=0: PASS two_directions tamper replay epoch clear zero_max_payload
+# CHANNEL_RECORD mode=1024 FPGA_encaps=1: PASS two_directions tamper replay epoch clear zero_max_payload
+# CHANNEL_RECORD: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_channel_record.sv(103)
+#    Time: 4249 us  Iteration: 1  Instance: /tb_channel_record
+# End time: 01:50:36 on Oct 24,2026, Elapsed time: 0:00:08
+# Errors: 0, Warnings: 0

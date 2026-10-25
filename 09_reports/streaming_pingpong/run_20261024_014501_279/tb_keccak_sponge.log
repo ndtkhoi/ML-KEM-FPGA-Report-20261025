@@ -1,0 +1,22 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\tb_keccak_sponge.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_pingpong\run_20261024_014501_279\tb_keccak_sponge.transcript.log tb_keccak_sponge -do "run -all; quit -f" 
+# Start time: 01:46:04 on Oct 24,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.tb_keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_pingpong\run_20261024_014501_279\work.keccak_round
+# run -all
+# SHA3_256_EMPTY: PASS cycles=732
+# SHA3_512_ABC: PASS cycles=512
+# SHAKE128_MULTIBLOCK: PASS cycles=2399
+# SHAKE256_LONG: PASS cycles=9370
+# KECCAK_SPONGE_REGRESSION: PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_keccak_sponge.sv(159)
+#    Time: 158326 ns  Iteration: 0  Instance: /tb_keccak_sponge
+# End time: 01:46:05 on Oct 24,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

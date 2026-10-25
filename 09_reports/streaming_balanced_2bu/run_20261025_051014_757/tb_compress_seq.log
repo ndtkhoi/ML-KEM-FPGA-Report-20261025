@@ -1,0 +1,15 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work -wlf D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\tb_compress_seq.wlf -l D:\ML_KEM_768_1024\09_reports\streaming_balanced_2bu\run_20261025_051014_757\tb_compress_seq.transcript.log tb_compress_seq -do "run -all; quit -f" 
+# Start time: 05:10:54 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.tb_compress_seq
+# Loading D:\ML_KEM_768_1024\04_sim\streaming_balanced_2bu\run_20261025_051014_757\work.compress_seq
+# run -all
+# COMPRESS_SEQ: ALL TESTS PASS exhaustive=27193 invalid_d reset latch_inputs
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/architectures/streaming_balanced_2bu/tb_compress_seq.sv(40)
+#    Time: 2358570 ns  Iteration: 1  Instance: /tb_compress_seq
+# End time: 05:10:57 on Oct 25,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

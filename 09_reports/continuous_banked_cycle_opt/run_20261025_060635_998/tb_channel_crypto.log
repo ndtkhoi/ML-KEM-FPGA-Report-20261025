@@ -1,0 +1,33 @@
+Reading D:/QUARTUS/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# vsim -c -onfinish exit -lib D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work -wlf D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\tb_channel_crypto.wlf -l D:\ML_KEM_768_1024\09_reports\continuous_banked_cycle_opt\run_20261025_060635_998\tb_channel_crypto.transcript.log tb_channel_crypto -do "run -all; quit -f" 
+# Start time: 06:12:33 on Oct 25,2026
+# Loading sv_std.std
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.tb_channel_crypto
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.aes_gcm_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.aes256_block
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.ghash_mul
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.channel_kdf
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.keccak_sponge
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.keccak_f1600_core
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.keccak_round_constants
+# Loading D:\ML_KEM_768_1024\04_sim\continuous_banked_cycle_opt\run_20261025_060635_998\work.keccak_round
+# run -all
+# AES256_FIPS197: PASS
+# AES256_GCM case=0 bytes=0 aad=0: PASS encrypt decrypt tamper
+# AES256_GCM case=1 bytes=1 aad=0: PASS encrypt decrypt tamper
+# AES256_GCM case=2 bytes=15 aad=1: PASS encrypt decrypt tamper
+# AES256_GCM case=3 bytes=16 aad=16: PASS encrypt decrypt tamper
+# AES256_GCM case=4 bytes=17 aad=32: PASS encrypt decrypt tamper
+# AES256_GCM case=5 bytes=31 aad=31: PASS encrypt decrypt tamper
+# AES256_GCM case=6 bytes=32 aad=32: PASS encrypt decrypt tamper
+# AES256_GCM case=7 bytes=255 aad=32: PASS encrypt decrypt tamper
+# AES256_GCM case=8 bytes=256 aad=32: PASS encrypt decrypt tamper
+# AES256_GCM case=9 bytes=16 aad=0: PASS encrypt decrypt tamper
+# CHANNEL_CRYPTO: ALL TESTS PASS
+# ** Note: $finish    : D:/ML_KEM_768_1024/02_tb/full/tb_channel_crypto.sv(76)
+#    Time: 568670 ns  Iteration: 1  Instance: /tb_channel_crypto
+# End time: 06:12:35 on Oct 25,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
